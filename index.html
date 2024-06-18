@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos Eletrônicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Img/logo.png" alt="Logo da Loja" class="logo">
+        <h1>Catálogo de Produtos WL Imports</h1>
+        <input type="text" id="search-bar" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
+        <button id="cart-button" onclick="mostrarCarrinho()">Carrinho (<span id="cart-count">0</span>)</button>
+    </header>
+    
+    <main>
+        <section id="produtos-geral">
+            <h2>Destaques para você</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61KRCHicrYL._AC_UF1000,1000_QL80_.jpg" alt="Produto 1">
+                    <h3>Fone de Ouvido Gamer Headset Find</h3>
+                    <p>R$ 100,00</p>
+                    <button onclick="abrirProdutoModal('Fone de Ouvido Gamer Headset Find Gamer', '100,00', 'https://m.media-amazon.com/images/I/61KRCHicrYL._AC_UF1000,1000_QL80_.jpg', 'Com almofadas macias e revestidas em couro, confortáveis para longos períodos de utilização')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Fone de Ouvido Gamer Headset Find Gamer', '100,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/611sWbtw5oL._AC_UF1000,1000_QL80_.jpg" alt="Produto 2">
+                    <h3>JBL, Caixa de Som, Go Essential, À Prova D'água</h3>
+                    <p>R$ 280,00</p>
+                    <button onclick="abrirProdutoModal('JBL, Caixa de Som, Go Essential, À Prova D água', '280,00', 'https://m.media-amazon.com/images/I/611sWbtw5oL._AC_UF1000,1000_QL80_.jpg', 'SOM ENVOLVENTE JBL. Sinta a qualidade de sonora profissional da JBL na caixa de som Go Essential, onde a potência som premium se une ao design compacto e ultraleve.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('JBL, Caixa de Som, Go Essential, À Prova D água', '280,00')">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+        <!-- Outros grupos de produtos -->
+
+        <section id="grupo-audio">
+            <h2>Áudio</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://images.kabum.com.br/produtos/fotos/316950/caixa-de-som-portatil-jbl-flip-6-bluetooth-a-prova-d-agua-usb-c-preto-28913556_1648650597_original.jpg" alt="Produto 3">
+                    <h3>Caixa de Som Portátil JBL Flip 6</h3>
+                    <p>R$ 300,00</p>
+                    <button onclick="abrirProdutoModal('Caixa de Som Portátil JBL Flip 6', '300,00', 'https://images.kabum.com.br/produtos/fotos/316950/caixa-de-som-portatil-jbl-flip-6-bluetooth-a-prova-d-agua-usb-c-preto-28913556_1648650597_original.jpg', 'Descrição do Produto 3')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Caixa de Som Portátil JBL Flip 6', '300,00')">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+        <section id="grupo-acessorios">
+            <h2>Grupo de Acessórios</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/5166ogGvNYL.jpg" alt="Produto 5">
+                    <h3>Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.</h3>
+                    <p>R$ 120,00</p>
+                    <button onclick="abrirProdutoModal('Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.', '120,00', 'https://m.media-amazon.com/images/I/5166ogGvNYL.jpg', 'Carregamento excepcionalmente rápido: Alcança velocidades até 3 vezes superiores aos carregadores convencionais.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.', '120,00')">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+        <section id="grupo-canivetes">
+            <h2>Grupo de Canivetes</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="link-da-imagem-do-produto7" alt="Produto 7">
+                    <h3>Produto 7</h3>
+                    <p>R$ 700,00</p>
+                    <button onclick="abrirProdutoModal('Produto 7', '700,00', 'link-da-imagem-do-produto7', 'Descrição do Produto 7')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Produto 7', '700,00')">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+    <div id="toast" class="toast">Produto adicionado ao carrinho!</div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharCarrinho()">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Taxa de entrega: R$ 10,00</p>
+            <p>Total: R$ <span id="total-value">0,00</span></p>
+            <input type="text" id="cliente-nome" placeholder="Seu nome">
+            <input type="text" id="cliente-endereco" placeholder="Seu endereço">
+            <select id="pagamento-forma" onchange="toggleTroco()">
+                <option value="" disabled selected>Forma de Pagamento</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Pix">Pix</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+            </select>
+            <div id="troco-container" style="display: none;">
+                <label for="troco">Precisa de troco para quanto?</label>
+                <input type="text" id="troco" placeholder="Valor do troco">
+            </div>
+            <button onclick="enviarPedido()">Enviar Pedido pelo WhatsApp</button>
+        </div>
+    </div>
+    
+
+    <!-- Modal de Detalhes do Produto -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharProdutoModal()">&times;</span>
+            <h6 id="modal-product-name">Nome do Produto</h6>
+            <img id="modal-product-image" src="" alt="Imagem do Produto">
+            <p id="modal-product-price">Preço: R$</p>
+            <p id="modal-product-description">Descrição do produto...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p> wanderssong545@gmail.com</p>
+        <p> 66 9 9696-7406 / 11 9 4292-0043</p>
+        <h2> Taxa de entrega fixa dentro de Sinop </h2>
+        <img src="Img/logo.png" alt="Logo da Loja" class="logo">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
