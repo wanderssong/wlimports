@@ -18,7 +18,411 @@ header {
 }
 
 .logo {
+    max-height: 120px;body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundo.png?raw=true);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 0; /* Ajuste de padding para separação superior e inferior */
+    display: flex;
+    flex-direction: row; /* Mudança para linha para alinhar itens horizontalmente */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.logo {
     max-height: 120px;
+    width: 160px;
+    height: auto;
+    align-self: flex-start; /* Alinha a logo no início do cabeçalho */
+}
+
+#cart-button {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-left: 120px; /* Mover o botão para o lado direito */
+}
+
+#cart-button:hover {
+    background-color: #f16b05;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-top: 10px; /* Adiciona margem superior para separação do h1 */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #faf7f7;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 20px; /* Adiciona margem superior para separação do campo de busca */
+}
+
+h6 {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px; /* Diminuir o padding */
+    text-align: center;
+    width: 150px; /* Diminuir a largura */
+    box-shadow: 0 2px 5px rgba(253, 252, 252, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 16px; /* Ajustar tamanho da fonte */
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    color: #333;
+}
+
+.product button {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px; /* Ajustar o padding */
+    cursor: pointer;
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    margin-bottom: 5px;
+}
+
+.product button:hover {
+    background-color: #ef6401;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento superior e inferior */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #f16b05;
+}
+
+button {
+    background-color: #05f150;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #f16b05;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#pagamento-forma {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: calc(100% - 20px);
+    margin: 10px 0; /* Espaçamento superior e inferior */
+}
+
+#pagamento-forma:hover {
+    background-color: #fc8506;
+    transform: scale(1.05);
+}
+
+#pagamento-forma:active {
+    transform: scale(0.95);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {                      /* modal carrinho */
+    background-color: #121111;
+    color: #faf7f7;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(254, 90, 2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 160px;
+    height: auto;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li button {
+    background-color: red;
+    color: rgb(243, 241, 241);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cart-items li button:hover {
+    background-color: darkred;
+}
+
+#product-modal .modal-content {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+#product-modal img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 18px;
+}
+
+.toast.show {
+    display: block;
+}
+
+#endereco-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#endereco-form h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#endereco-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#endereco-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#endereco-form button[type="submit"] {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#endereco-form button[type="submit"]:hover {
+    background-color: #128C7E;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #search-bar {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    footer img {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    #cart-button {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        align-self: center;
+    }
+}
+
+/* Estilização adicional para os botões do carrinho */
+#cart-items li button {
+    background-color: #f10505;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#cart-items li button:hover {
+    background-color: #f6b903;
+    transform: scale(1.05);
+}
+
+#cart-items li button:active {
+    transform: scale(0.95);
+}
     width: 160px;
     height: auto;
     align-self: flex-start; /* Alinha a logo no início do cabeçalho */
