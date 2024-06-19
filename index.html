@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Produtos Eletrônicos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 <body>
     <header>
@@ -32,6 +33,27 @@
                     <button onclick="abrirProdutoModal('JBL, Caixa de Som, Go Essential, À Prova D água', '280,00', 'https://m.media-amazon.com/images/I/611sWbtw5oL._AC_UF1000,1000_QL80_.jpg', 'SOM ENVOLVENTE JBL. Sinta a qualidade de sonora profissional da JBL na caixa de som Go Essential, onde a potência som premium se une ao design compacto e ultraleve.')">Ver Detalhes</button>
                     <button onclick="adicionarAoCarrinho('JBL, Caixa de Som, Go Essential, À Prova D água', '280,00')">Adicionar ao Carrinho</button>
                 </div>
+                <div class="product">
+                    <img src="https://emania.vteximg.com.br/arquivos/ids/205026" alt="Produto 3">
+                    <h3>Hd Ssd Kingston 240gb Sata 3 A400 Notebook</h3>
+                    <p>R$ 280,00</p>
+                    <button onclick="abrirProdutoModal('Hd Ssd Kingston 240gb Sata 3 A400', '280,00', 'https://emania.vteximg.com.br/arquivos/ids/205026', 'Hd Ssd Kingston 240gb Sata 3 A400 2,5 Notebook')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Hd Ssd Kingston 240gb Sata 3 A400', '280,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://global.cdn.magazord.com.br/milicopadrao/img/2022/07/produto/1023/canivete-caratuva.jpg?ims=fit-in/865x865/filters:fill(white)" alt="Produto 4">
+                    <h3>Canivete tático Caratuva Único</h3>
+                    <p>R$ 99,00</p>
+                    <button onclick="abrirProdutoModal('Canivete tático Caratuva Único', '99,00', 'https://global.cdn.magazord.com.br/milicopadrao/img/2022/07/produto/1023/canivete-caratuva.jpg?ims=fit-in/865x865/filters:fill(white)', ' Ele possui abertura SPRING ASSISTED, trava LINER LOCK, porta-fiel, cabo em polímero, lâmina em aço inoxidável 3cr13 com espessura de 3 mm e clip de fixação. Lâmina em aço inoxidável 3cr13')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Canivete tático Caratuva Único', '99,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.kabum.com.br/produtos/fotos/196254/headset-sem-fio-gamer-hyperx-cloud-flight-drivers-50mm-led-ps5-e-ps4-hhsf1-ga-bk-g_1634393239_original.jpg" alt="Produto 5">
+                    <h3>Headset Gamer Sem Fio HyperX Cloud Flight</h3>
+                    <p>R$ 600,00</p>
+                    <button onclick="abrirProdutoModal('Headset Gamer Sem Fio HyperX Cloud Flight', '600,00', 'https://images.kabum.com.br/produtos/fotos/196254/headset-sem-fio-gamer-hyperx-cloud-flight-drivers-50mm-led-ps5-e-ps4-hhsf1-ga-bk-g_1634393239_original.jpg', ' Descontraia-se enquanto se mantém confortável, mesmo durante longas sessões de jogo tarde da noite, graças às almofadas de espuma viscoelástica premium e controles deslizantes de aço ajustáveis.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Headset Gamer Sem Fio HyperX Cloud Flight', '600,00')">Adicionar ao Carrinho</button>
+                </div>
                 <!-- Adicione mais produtos conforme necessário -->
             </div>
         </section>
@@ -42,40 +64,118 @@
             <h2>Áudio</h2>
             <div class="product-list">
                 <div class="product">
-                    <img src="https://images.kabum.com.br/produtos/fotos/316950/caixa-de-som-portatil-jbl-flip-6-bluetooth-a-prova-d-agua-usb-c-preto-28913556_1648650597_original.jpg" alt="Produto 3">
+                    <img src="https://images.kabum.com.br/produtos/fotos/316950/caixa-de-som-portatil-jbl-flip-6-bluetooth-a-prova-d-agua-usb-c-preto-28913556_1648650597_original.jpg" alt="Produto 6">
                     <h3>Caixa de Som Portátil JBL Flip 6</h3>
                     <p>R$ 300,00</p>
                     <button onclick="abrirProdutoModal('Caixa de Som Portátil JBL Flip 6', '300,00', 'https://images.kabum.com.br/produtos/fotos/316950/caixa-de-som-portatil-jbl-flip-6-bluetooth-a-prova-d-agua-usb-c-preto-28913556_1648650597_original.jpg', 'Descrição do Produto 3')">Ver Detalhes</button>
                     <button onclick="adicionarAoCarrinho('Caixa de Som Portátil JBL Flip 6', '300,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://novolare.ipoomweb.com.br/img-produto/1000/103608/4/caixa+de+som+amplificada+mondial+cm+700+700w.jpg" alt="Produto 7">
+                    <h3>Caixa De Som Amplificada Mondial Cm-700 - 700w</h3>
+                    <p>R$ 835,00</p>
+                    <button onclick="abrirProdutoModal('Caixa De Som Amplificada Mondial Cm-700 - 700w', '835,00', 'https://novolare.ipoomweb.com.br/img-produto/1000/103608/4/caixa+de+som+amplificada+mondial+cm+700+700w.jpg', '700w rms som potente de alta qualidade com alto-falante de 15, Bluetooth facilidade para ouvir músicas direto do celular sem uso de cabo, Função tws true wireless stereo permite conectar duas cm-700 sem uso de fios.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Caixa De Som Amplificada Mondial Cm-700 - 700w','835,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.awsli.com.br/600x1000/187/187774/produto/154285950/capa-dunjsb.jpg" alt="Produto 8">
+                    <h3>Caixa de Som Portátil Bluetooth CX-50</h3>
+                    <p>R$ 115,00</p>
+                    <button onclick="abrirProdutoModal('Caixa de Som Portátil Bluetooth CX-50', '115,00', 'https://cdn.awsli.com.br/600x1000/187/187774/produto/154285950/capa-dunjsb.jpg', 'A Caixa de Som 20W Bluetooth Sound Pró Lemon é uma opção de alta qualidade e desempenho para ouvir música. Com conectividade Bluetooth, você pode reproduzir suas músicas preferidas sem fios a partir do seu smartphone ou tablet.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Caixa de Som Portátil Bluetooth CX-50','115,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_656423-MLA52233555316_112022-O.webp" alt="Produto 9">
+                    <h3>Echo Dot 5th Gen com assistente virtual Alexa</h3>
+                    <p>R$ 429,00</p>
+                    <button onclick="abrirProdutoModal('Echo Dot 5th Gen com assistente virtual Alexa', '429,00', 'https://http2.mlstatic.com/D_NQ_NP_656423-MLA52233555316_112022-O.webp', 'A vantagem deste assistente virtual é que ele tem uma melhor integração com todos os serviços e dispositivos da Amazon.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Echo Dot 5th Gen com assistente virtual Alexa','429,00')">Adicionar ao Carrinho</button>
                 </div>
                 <!-- Adicione mais produtos conforme necessário -->
             </div>
         </section>
 
         <section id="grupo-acessorios">
-            <h2>Grupo de Acessórios</h2>
+            <h2>Acessórios</h2>
             <div class="product-list">
                 <div class="product">
-                    <img src="https://m.media-amazon.com/images/I/5166ogGvNYL.jpg" alt="Produto 5">
+                    <img src="https://m.media-amazon.com/images/I/5166ogGvNYL.jpg" alt="Produto 10">
                     <h3>Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.</h3>
                     <p>R$ 120,00</p>
-                    <button onclick="abrirProdutoModal('Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.', '120,00', 'https://m.media-amazon.com/images/I/5166ogGvNYL.jpg', 'Carregamento excepcionalmente rápido: Alcança velocidades até 3 vezes superiores aos carregadores convencionais.')">Ver Detalhes</button>
+                    <button onclick="abrirProdutoModal('Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.', '120,00', 'https://m.media-amazon.com/images/I/5166ogGvNYL.jpg', '700w rms som potente de alta qualidade com alto-falante de 15, Bluetooth facilidade para ouvir músicas direto do celular sem uso de cabo, Função tws true wireless stereo permite conectar duas cm-700 sem uso de fios.')">Ver Detalhes</button>
                     <button onclick="adicionarAoCarrinho('Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo.', '120,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.vxcase.com.br/cdn/shop/products/carregador-portatil-thunderbolt-20000mah-vx-case-preta-04-carregando-o-celular_1.png?v=1683245836&width=1214" alt="Produto 11">
+                    <h3>Carregador Portátil Thunderbolt 20.000mAh VX Case Preta</h3>
+                    <p>R$ 449,00</p>
+                    <button onclick="abrirProdutoModal('Carregador Portátil Thunderbolt 20.000mAh VX Case Preta', '449,00', 'https://www.vxcase.com.br/cdn/shop/products/carregador-portatil-thunderbolt-20000mah-vx-case-preta-04-carregando-o-celular_1.png?v=1683245836&width=1214', 'Compatível com diversos dispositivos:Notebooks, Macbooks, Câmeras, Smartphones, Tablets, MP3 Players, etc. Android ou iOS.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Carregador Portátil Thunderbolt 20.000mAh VX Case Preta', '449,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/758376/carregador_fast_sem_fio_inducao_qi_compativel_c_ios_11_e_12_1179_1_6ea5d7159fe4ea45f0b241078688db30.jpg" alt="Produto 12">
+                    <h3>Carregador Fast Sem Fio Indução Qi Compatível C/ Ios 11 E 12.</h3>
+                    <p>R$ 65,00</p>
+                    <button onclick="abrirProdutoModal('Carregador Fast Sem Fio Indução Qi Compatível C/ Ios 11 E 12', '65,00', 'https://images.tcdn.com.br/img/img_prod/758376/carregador_fast_sem_fio_inducao_qi_compativel_c_ios_11_e_12_1179_1_6ea5d7159fe4ea45f0b241078688db30.jpg', 'É uma ótima opção para mesas de cabeceira e escritórios, já que evita aquela confusão de cabos na mesa.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Carregador Fast Sem Fio Indução Qi Compatível C/ Ios 11 E 12', '65,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/41T6UXPj8vL._AC_UF1000,1000_QL80_.jpg" alt="Produto 13">
+                    <h3>Fone de Ouvido Bluetooth 5.0 Par Sem Fio Duplo.</h3>
+                    <p>R$ 70,00</p>
+                    <button onclick="abrirProdutoModal('Fone de Ouvido Bluetooth 5.0 Par Sem Fio Duplo - Intra Auricular MIURI.', '70,00', 'https://m.media-amazon.com/images/I/41T6UXPj8vL._AC_UF1000,1000_QL80_.jpg', 'Versão Bluetooth 5.0, usando frequência 2.4GHZ, consumo de energia ultra baixo.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Fone de Ouvido Bluetooth 5.0 Par Sem Fio Duplo - Intra Auricular MIURI.', '70,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://waaw.com.br/cdn/shop/products/VIB-100EW-04.png?v=1660920719&width=2048" alt="Produto 14">
+                    <h3>Fone De Ouvido Waaw Vib 100ew Com Microfone by Alok.</h3>
+                    <p>R$ 60,00</p>
+                    <button onclick="abrirProdutoModal('Fone De Ouvido Waaw Vib 100ew Com Microfone by Alok', '60,00', 'https://waaw.com.br/cdn/shop/products/VIB-100EW-04.png?v=1660920719&width=2048', 'Fone de ouvido intra-auricular, com microfone integrado, conector P3, Hands Free.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Fone De Ouvido Waaw Vib 100ew Com Microfone by Alok', '60,00')">Adicionar ao Carrinho</button>
                 </div>
                 <!-- Adicione mais produtos conforme necessário -->
             </div>
         </section>
 
         <section id="grupo-canivetes">
-            <h2>Grupo de Canivetes</h2>
-            <div class="product-list">
+            <h2>Camping</h2>
+             <div class="product-list">
                 <div class="product">
-                    <img src="link-da-imagem-do-produto7" alt="Produto 7">
-                    <h3>Produto 7</h3>
-                    <p>R$ 700,00</p>
-                    <button onclick="abrirProdutoModal('Produto 7', '700,00', 'link-da-imagem-do-produto7', 'Descrição do Produto 7')">Ver Detalhes</button>
-                    <button onclick="adicionarAoCarrinho('Produto 7', '700,00')">Adicionar ao Carrinho</button>
+                    <img src="https://images.tcdn.com.br/img/img_prod/496227/canivete_automatico_taue_ka600_saque_rapido_11117514_1_20e650f62c7252805bab8da4fa7ee170.jpg" alt="Produto 15">
+                    <h3>Canivete De Metal Tático e Camping Automático Taue</h3>
+                    <p>R$ 50,00</p>
+                    <button onclick="abrirProdutoModal('Canivete De Metal Tático e Camping Automático Taue', '50,00', 'https://images.tcdn.com.br/img/img_prod/496227/canivete_automatico_taue_ka600_saque_rapido_11117514_1_20e650f62c7252805bab8da4fa7ee170.jpg', 'Todo produzido em aço inoxidável de alta qualidade, com lâmina super afiada e com cabo plástico antiderrapante, para uma pegada mais firme e segura.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Canivete De Metal Tático e Camping Automático Taue', '50,00')">Adicionar ao Carrinho</button>
                 </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1120290/canivete_multifuncional_com_10_funcoes_guepardo_multiplo_ntk_2549_1_a16d984ca0ed50d354958f21a82ef7a0.jpg" alt="Produto 16">
+                    <h3>Canivete Guepardo Múltiplo</h3>
+                    <p>R$ 80,00</p>
+                    <button onclick="abrirProdutoModal('Canivete Guepardo Múltiplo', '80,00', 'https://images.tcdn.com.br/img/img_prod/1120290/canivete_multifuncional_com_10_funcoes_guepardo_multiplo_ntk_2549_1_a16d984ca0ed50d354958f21a82ef7a0.jpg', 'O canivete Múltiplo multifunção Prata da Guepardo vem com 10 funções: serrinha, lâmina, tesoura, abridor de garrafa, lixa, saca rolha, abridor de lata, chave de fenda, chave Philips e lâmina furadora.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Canivete Guepardo Múltiplo', '80,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.awsli.com.br/600x1000/318/318702/produto/223670050/faca-t-tica-militar-baioneta-xv3149--3--wwv1iac27h.jpg" alt="Produto 17">
+                    <h3>Faca Tática Militar Baioneta XV3145 </h3>
+                    <p>R$ 90,00</p>
+                    <button onclick="abrirProdutoModal('Faca Tática Militar Baioneta XV3145', '90,00', 'https://cdn.awsli.com.br/600x1000/318/318702/produto/223670050/faca-t-tica-militar-baioneta-xv3149--3--wwv1iac27h.jpg', 'Possui lâmina negra em aço inox, serra no dorso e design com grande poder de penetração. Conta com cabo anatômico emborrachado e sistema Baioneta.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Faca Tática Militar Baioneta XV3145', '90,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://2516.cdn.simplo7.net/static/2516/sku/lanternas-e-lampioes-lanterna-tatica-one-invictus-1486322360879.jpg" alt="Produto 18">
+                    <h3>LANTERNA LED TÁTICA ONE - INVICTUS</h3>
+                    <p>R$ 70,00</p>
+                    <button onclick="abrirProdutoModal('LANTERNA LED TÁTICA ONE - INVICTUS', '70,00', 'https://2516.cdn.simplo7.net/static/2516/sku/lanternas-e-lampioes-lanterna-tatica-one-invictus-1486322360879.jpg', 'É resistente à água, possui zoom regulável e três funções que incluem, além de luz alta e baixa, o estrobo, utilizado para desorientar o alvo/oponente em situações de combate.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('LANTERNA LED TÁTICA ONE - INVICTUS', '70,00')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.awsli.com.br/2500x2500/2541/2541733/produto/217963960/lanterna-multifuncional-chaveiro-01-j3qe6kgy44.jpg" alt="Produto 18">
+                    <h3>Lanterna Led Cob Usb Abridor e Imã Chaveiro Super Forte Mini Imports</h3>
+                    <p>R$ 30,00</p>
+                    <button onclick="abrirProdutoModal('Lanterna Led Cob Usb Abridor e Imã Chaveiro Super Forte Mini Imports', '30,00', 'https://cdn.awsli.com.br/2500x2500/2541/2541733/produto/217963960/lanterna-multifuncional-chaveiro-01-j3qe6kgy44.jpg', 'O Produto tem uma variedade de recursos para utilização, além de ser uma super mini lanterna para emergências em camping, manutenções de automóvel, esportes ao ar livre, entre outros. Gancho do chaveiro é do tipo mosquetão, possui imã na parte de trás, também possui abridor de garrafa.')">Ver Detalhes</button>
+                    <button onclick="adicionarAoCarrinho('Lanterna Led Cob Usb Abridor e Imã Chaveiro Super Forte Mini Imports', '30,00')">Adicionar ao Carrinho</button>
+                </div>
+                
                 <!-- Adicione mais produtos conforme necessário -->
             </div>
         </section>
@@ -85,25 +185,32 @@
 
     <div id="cart-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="fecharCarrinho()">&times;</span>
+            <span class="close" id="close-cart" onclick="fecharCarrinho()">&times;</span>
             <h2>Carrinho de Compras</h2>
             <ul id="cart-items"></ul>
-            <p>Taxa de entrega: R$ 10,00</p>
+            <p>Produtos:</p>
+            <p id="cart-total"></p>
+            <p>Taxa de entrega: R$ <span id="taxa-entrega">10,00</span></p> <!-- Elemento para exibir a taxa de entrega -->
             <p>Total: R$ <span id="total-value">0,00</span></p>
-            <input type="text" id="cliente-nome" placeholder="Seu nome">
-            <input type="text" id="cliente-endereco" placeholder="Seu endereço">
-            <select id="pagamento-forma" onchange="toggleTroco()">
-                <option value="" disabled selected>Forma de Pagamento</option>
-                <option value="Dinheiro">Dinheiro</option>
-                <option value="Pix">Pix</option>
-                <option value="Cartão de Débito">Cartão de Débito</option>
-                <option value="Cartão de Crédito">Cartão de Crédito</option>
-            </select>
-            <div id="troco-container" style="display: none;">
-                <label for="troco">Precisa de troco para quanto?</label>
-                <input type="text" id="troco" placeholder="Valor do troco">
-            </div>
-            <button onclick="enviarPedido()">Enviar Pedido pelo WhatsApp</button>
+            <form id="carrinho-form" onsubmit="enviarPedido(); return false;">
+                <label for="cliente-nome">Nome:</label>
+                <input type="text" id="cliente-nome" required>
+                <label for="cliente-endereco">Endereço:</label>
+                <input type="text" id="cliente-endereco" required>
+                <label for="pagamento-forma">Forma de Pagamento:</label>
+                <select id="pagamento-forma" required onchange="toggleTroco()">
+                    <option value="" disabled selected>Selecione uma forma de pagamento</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Débito">Cartão de Débito</option>
+                    <option value="Crédito">Cartão de Crédito</option>
+                    <option value="PIX">PIX</option>
+                </select>
+                <div id="troco-container" style="display: none;">
+                    <label for="troco">Troco para:</label>
+                    <input type="text" id="troco" placeholder="Valor para troco">
+                </div>
+                <button type="submit" id="finalizar-pedido">Finalizar Pedido</button>
+            </form>
         </div>
     </div>
     
