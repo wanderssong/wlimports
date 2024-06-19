@@ -350,14 +350,14 @@ footer img {
         max-width: 80%;
     }
     .product-list {
+        flex-direction: column;
+        align-items: center;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .product {
-        width: calc(50% - 20px); /* Define duas colunas */
-        margin: 10px;
+        width: 90%;
+        margin: 10px 0;
     }
 
     #search-bar {
