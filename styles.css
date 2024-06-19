@@ -273,7 +273,7 @@ button:active {
 }
 
 footer {
-    background-color: #333;
+    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundofooter.jpg?raw=true);
     color: #fff;
     padding: 2px;
     text-align: center;
