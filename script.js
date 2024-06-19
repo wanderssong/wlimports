@@ -23,6 +23,12 @@ function atualizarCarrinho() {
     const totalValue = document.getElementById('total-value');
     total += 10; // Adiciona taxa de entrega de R$ 10,00
     totalValue.innerText = total.toFixed(2).replace('.', ',');
+
+    const taxaEntrega = document.getElementById('taxa-entrega');
+    taxaEntrega.innerText = '10,00'; // Define o valor da taxa de entrega
+
+    const cartTotal = document.getElementById('cart-total');
+    cartTotal.innerText = `Total (incluindo taxa de entrega): R$ ${total.toFixed(2).replace('.', ',')}`;
 }
 
 function mostrarCarrinho() {
@@ -38,7 +44,8 @@ function fecharCarrinho() {
 function toggleTroco() {
     const pagamentoForma = document.getElementById('pagamento-forma').value;
     const trocoContainer = document.getElementById('troco-container');
-    if (pagamentoForma === 'Dinheiro') {
+    
+    if (pagamentoForma.toLowerCase() === 'dinheiro') {
         trocoContainer.style.display = 'block';
     } else {
         trocoContainer.style.display = 'none';
@@ -51,7 +58,7 @@ function enviarPedido() {
     const enderecoCliente = document.getElementById('cliente-endereco').value;
     const formaPagamento = document.getElementById('pagamento-forma').value;
     let mensagem = `Olá, meu nome é ${nomeCliente} e gostaria de fazer um pedido:\n`;
-    
+
     carrinho.forEach(item => {
         mensagem += `Produto: ${item.nome}, Valor: R$ ${item.valor.toFixed(2).replace('.', ',')}\n`;
     });
@@ -62,8 +69,8 @@ function enviarPedido() {
     mensagem += `\nEndereço para entrega: ${enderecoCliente}`;
     mensagem += `\nForma de Pagamento: ${formaPagamento}`;
 
-    if (formaPagamento === 'Dinheiro') {
-        const troco = document.getElementById('troco').value;
+    if (formaPagamento === 'dinheiro') {
+        const troco = document.getElementById('troco-valor').value;
         if (troco) {
             mensagem += `\nPrecisa de troco para: R$ ${troco}`;
         }
@@ -110,3 +117,15 @@ function showToast() {
     toast.className = 'toast show';
     setTimeout(() => { toast.className = toast.className.replace('show', ''); }, 3000);
 }
+
+// Evento de mudança no select de forma de pagamento
+document.addEventListener("DOMContentLoaded", function() {
+    const pagamentoForma = document.getElementById('pagamento-forma');
+    pagamentoForma.addEventListener('change', toggleTroco);
+
+    const carrinhoForm = document.getElementById('carrinho-form');
+    carrinhoForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        enviarPedido();
+    });
+});
