@@ -21,7 +21,6 @@ header {
     max-height: 120px;
     width: 160px;
     height: auto;
-    align-self: flex-start; /* Alinha a logo no início do cabeçalho */
 }
 
 #cart-button {
