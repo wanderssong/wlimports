@@ -483,6 +483,11 @@ footer img {
 
 /* Media queries para responsividade  MOBILE */
 @media (max-width: 768px) {
+    .toast{
+        display: block;
+        width: 80%;
+        max-width: 300px;
+    }
     header h1{
         text-align: center;
     }
