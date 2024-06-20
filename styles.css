@@ -425,6 +425,9 @@ footer img {
 
 /* Media queries para responsividade  MOBILE */
 @media (max-width: 768px) {
+    header h1{
+        text-align: center;
+    }
     /* Ajustes no modal de produtos */
     .modal-content {
         
