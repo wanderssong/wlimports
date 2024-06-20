@@ -425,22 +425,22 @@ footer img {
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .modal-content {
-        width: 90%; /* Ajusta a largura do modal */
+        width: 90%;
         max-width: 90%;
         margin: 20% auto;
     }
 
     .product-list {
         display: flex;
-        flex-wrap: nowrap; /* Mantém os produtos em uma linha */
-        overflow-x: auto; /* Permite a rolagem horizontal */
+        flex-wrap: nowrap;
+        overflow-x: auto;
         padding: 10px;
-        margin: 0 -10px; /* Remove a margem externa negativa */
+        margin: 0 -10px; /* Compensa a margem positiva dos produtos */
     }
 
     .product {
-        flex: 0 0 auto; /* Impede que os produtos encolham */
-        width: 150px; /* Ajusta a largura dos produtos */
+        flex: 0 0 auto;
+        width: 120px; /* Mantendo o tamanho original */
         margin: 0 10px; /* Espaçamento entre os produtos */
         display: flex;
         flex-direction: column;
@@ -454,7 +454,7 @@ footer img {
     .product img {
         width: 100%;
         border-radius: 10px 10px 0 0;
-        max-height: 100px; /* Limita a altura da imagem */
+        max-height: 80px; /* Limita a altura da imagem */
     }
 
     .product h2 {
