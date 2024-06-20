@@ -433,8 +433,8 @@ footer img {
         max-width: 80%;
     }
     .product-list {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: nowrap;
+        overflow: auto;
         
     }
 
