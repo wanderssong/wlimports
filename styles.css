@@ -431,7 +431,7 @@ footer img {
 }
 
 /* Media queries para responsividade */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .modal-content{
         width: 65%;
         max-width: 70%;
@@ -444,12 +444,13 @@ footer img {
 
     .product {
         width: calc(50% - 20px); /* 50% da largura com espaço entre os produtos */
-        height: 250; /* Altura  para ajustar conteúdo */
+        height: auto; /* Altura  para ajustar conteúdo */
         margin: 10px; /* Espaçamento entre os produtos */
     }
     .product h2 {
         font-size: 12px; /* Reduz o tamanho da fonte do título no mobile */
-        max-height: 30px;
+        margin: 5px 0;
+        max-height: 36px;
     }
     .product p {
         font-size: 10px; /* Reduz o tamanho da fonte do texto no mobile */
@@ -458,6 +459,35 @@ footer img {
 
     .product button {
         font-size: 10px; /* Reduz o tamanho da fonte do botão no mobile */
+        margin-top: 5px;
+    }
+    @media (max-width: 768px) {
+        .product-list {
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Adiciona rolagem horizontal se os produtos não couberem na tela */
+        }
+    
+        .product {
+            width: calc(100% - 20px); /* Largura total com espaço entre os produtos */
+            height: auto; /* Altura automática para ajustar conteúdo */
+            margin: 10px; /* Espaçamento entre os produtos */
+        }
+    
+        .product h2 {
+            font-size: 12px; /* Reduz o tamanho da fonte do título no mobile */
+            margin: 5px 0; /* Ajusta a margem do título */
+            max-height: 36px; /* Limita a altura do título */
+        }
+    
+        .product p {
+            font-size: 10px; /* Reduz o tamanho da fonte do texto no mobile */
+            max-height: 50px; /* Limita a altura do texto */
+        }
+    
+        .product button {
+            font-size: 10px; /* Reduz o tamanho da fonte do botão no mobile */
+            margin-top: 5px; /* Ajusta a margem acima do botão */
+        }
     }
 
 
