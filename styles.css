@@ -433,14 +433,14 @@ footer img {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto; /* Permite a rolagem horizontal */
-        padding: 10px; /* Adiciona espaçamento interno */
+        padding: 5px; /* Adiciona espaçamento interno */
     }
 
     .product {
         width: 220px; /* Ajusta a largura dos produtos */
         height: 310px; /* Ajusta a altura dos produtos */
-        margin: 10px; /* Espaçamento entre os produtos */
-        flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
+        margin: 7px; /* Espaçamento entre os produtos */
+        
     }
 
     .product img {
