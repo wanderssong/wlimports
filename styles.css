@@ -438,19 +438,19 @@ footer img {
 
     .product {
         width: 220px; /* Ajusta a largura dos produtos */
-        height: 280px; /* Ajusta a altura dos produtos */
+        height: 290px; /* Ajusta a altura dos produtos */
         margin: 10px; /* Espaçamento entre os produtos */
         flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
     }
 
     .product img {
-        width: 100%;
+        width: 80%;
         height: auto;
         border-radius: 10px 10px 0 0;
     }
 
     .product h2 {
-        font-size: 12px; /* Tamanho da fonte do título */
+        font-size: 9px; /* Tamanho da fonte do título */
         margin: 5px 0; /* Espaçamento do título */
         max-height: 40px; /* Altura máxima do título */
         overflow: hidden;
