@@ -52,6 +52,21 @@ header {
     margin-top: 10px; /* Adiciona margem superior para separação do h1 */
     animation: glowing 1.5s infinite;
 }
+@keyframes glow {
+    0% {
+        border-color: #f16b05;
+        box-shadow: 0 0 5px #f16b05;
+    }
+    50% {
+        border-color: #ff9500;
+        box-shadow: 0 0 20px #ff9500;
+    }
+    100% {
+        border-color: #f16b05;
+        box-shadow: 0 0 5px #f16b05;
+    }
+}
+
 @keyframes glowing {                 /* Adiciona borda animada no produtos */
     0% { box-shadow: 0 0 5px #f16b05; }
     50% { box-shadow: 0 0 20px #f16b05; }
@@ -336,7 +351,9 @@ footer img {
 .instagram-icon {
     width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
     height: auto; /* Mantém a proporção da imagem */
-    animation: pulse 2s infinite; /* Aplica a animação pulse de forma infinita */
+    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
+    border: 2px solid #f16b05;
+    border-radius: 50%;
 } 
 
 @keyframes pulse {     /* Aplica a animação no icon instagram */
