@@ -483,7 +483,7 @@ footer img {
     .product p {
         font-size: 12px; /* Tamanho da fonte do texto */
         color: #333; /* Cor do texto */
-        max-height: 40px; /* Altura máxima do texto */
+        max-height: 36px; /* Altura máxima do texto */
         overflow: hidden; /* Esconde texto que exceder a caixa */
         text-overflow: ellipsis; /* Texto truncado com reticências */
         text-align: center; /* Alinhamento central do texto */
@@ -492,7 +492,7 @@ footer img {
     /* Estilo do botão dentro do produto */
     .product button {
         font-size: 10px; /* Tamanho da fonte do botão */
-        padding: 7px; /* Espaçamento interno do botão */
+        padding: 3px; /* Espaçamento interno do botão */
         margin-top: 3px; /* Espaçamento superior do botão */
         width: 80%; /* Largura total do botão */
         border-radius: 5px; /* Cantos arredondados */
