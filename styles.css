@@ -436,44 +436,55 @@ footer img {
         overflow-x: auto; /* Permite a rolagem horizontal */
         padding: 10px; /* Adicionar espaçamento interno */
         gap: 10px; /* Espaçamento entre os produtos */
-        height: auto; /* Ajustar altura para evitar rolagem vertical */
     }
 
     .product {
         flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
         width: 150px; /* Ajustar a largura dos produtos para mobile */
-        height: 250px; /* Ajustar a altura dos produtos para mobile */
+        height: auto; /* Ajustar a altura dos produtos para mobile */
         margin: 0 5px; /* Espaçamento horizontal entre os produtos */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         overflow: hidden; /* Garantir que o conteúdo não exceda a altura */
+        background-color: #fff; /* Fundo branco para contraste */
+        border-radius: 10px; /* Cantos arredondados */
+        padding: 10px; /* Espaçamento interno */
     }
 
     .product img {
         width: 100%; /* Certifica-se de que a imagem ocupa toda a largura do contêiner */
         height: auto; /* Ajustar altura para manter proporção */
         border-radius: 10px 10px 0 0;
+        max-height: 100px; /* Limitar a altura da imagem */
     }
 
     .product h2 {
-        font-size: 14px; /* Tamanho da fonte do título ajustado para ser legível */
+        font-size: 12px; /* Tamanho da fonte do título ajustado para ser legível */
         margin: 5px 0; /* Espaçamento do título */
         max-height: 36px; /* Altura máxima do título */
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        text-align: center;
     }
 
     .product p {
-        font-size: 12px; /* Tamanho da fonte do texto ajustado */
+        font-size: 10px; /* Tamanho da fonte do texto ajustado */
         color: #333;
         max-height: 40px; /* Altura máxima do texto */
         overflow: hidden;
         text-overflow: ellipsis;
+        text-align: center;
     }
 
     .product button {
-        font-size: 12px; /* Tamanho da fonte do botão ajustado */
-        margin-top: 3px;
+        font-size: 10px; /* Tamanho da fonte do botão ajustado */
         padding: 5px;
+        margin-top: 3px;
+        width: 100%;
+        border-radius: 5px; /* Ajustar bordas arredondadas */
     }
 
     #search-bar {
