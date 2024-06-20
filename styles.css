@@ -52,11 +52,13 @@ header {
     margin-top: 10px; /* Adiciona margem superior para separação do h1 */
     animation: glowing 1.5s infinite;
 }
+
 @keyframes glowing {                 /* Adiciona borda animada no produtos */
     0% { box-shadow: 0 0 5px #f16b05; }
     50% { box-shadow: 0 0 20px #f16b05; }
     100% { box-shadow: 0 0 5px #f16b05; }
 }
+
 @keyframes slideAndFade {          /* Adiciona animacao na menssagem de adicionado ao carrinho */
     0% {
         opacity: 0;
@@ -100,39 +102,40 @@ section h2 {
 h1 {
     margin-top: 20px; /* Adiciona margem superior para separação do campo de busca */
 }
+
 /* CSS para o elemento h2 */
 h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  text-transform: uppercase;
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
-  overflow: hidden; /* Para esconder a borda inicialmente */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    overflow: hidden; /* Para esconder a borda inicialmente */
 }
 
 /* Pseudo-elemento para a borda */
 h2::after {
-  content: ''; /* Criando um pseudo-elemento para a borda */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px; /* Altura da borda */
-  background-color: #ff9500; /* Cor da borda */
-  animation: pulseBorder 2s linear infinite; /* Animando a borda continuamente */
+    content: ''; /* Criando um pseudo-elemento para a borda */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Altura da borda */
+    background-color: #ff9500; /* Cor da borda */
+    animation: pulseBorder 2s linear infinite; /* Animando a borda continuamente */
 }
 
 /* Keyframes para a animação de pulsação */
 @keyframes pulseBorder {
-  0% {
-    transform: scaleX(0); /* Começa sem largura */
-  }
-  50% {
-    transform: scaleX(1); /* Cresce até a largura total */
-  }
-  100% {
-    transform: scaleX(0); /* Volta para sem largura */
-  }
+    0% {
+        transform: scaleX(0); /* Começa sem largura */
+    }
+    50% {
+        transform: scaleX(1); /* Cresce até a largura total */
+    }
+    100% {
+        transform: scaleX(0); /* Volta para sem largura */
+    }
 }
 
 h6 {
@@ -264,6 +267,7 @@ button:active {
     background-color: rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.3s ease-out forwards;
 }
+
 @keyframes slideIn {
     0% {
         opacity: 0;
