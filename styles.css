@@ -445,13 +445,13 @@ footer img {
     }
 
     .product img {
-        width: 100%; /* Certifica-se de que a imagem ocupa toda a largura do contêiner */
+        width: 80%; /* Certifica-se de que a imagem ocupa toda a largura do contêiner */
         border-radius: 10px 10px 0 0;
     }
 
     .product h2 {
-        font-size: 14px; /* Tamanho da fonte do título ajustado para ser legível */
-        margin: 5px 0; /* Espaçamento do título */
+        font-size: 9px; /* Tamanho da fonte do título ajustado para ser legível */
+        margin: 3px 0; /* Espaçamento do título */
         max-height: 36px; /* Altura máxima do título */
         overflow: hidden;
         text-overflow: ellipsis;
