@@ -135,6 +135,7 @@ h2::after {
   }
 }
 
+
 h6 {                        /*FONTE PARA MODAL DETALHES */
     color: #ddd;
     font-size: 20px;
@@ -335,7 +336,21 @@ footer img {
 .instagram-icon {
     width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
     height: auto; /* Mantém a proporção da imagem */
+    animation: pulse 2s infinite; /* Aplica a animação pulse de forma infinita */
+} 
+
+@keyframes pulse {     /* Aplica a animação no icon instagram */
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
 
 #cart-items {
     list-style-type: none;
