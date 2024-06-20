@@ -429,8 +429,8 @@ footer img {
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .modal-content{
-        width: 60%;
-        max-width: 60%;
+        width: 70%;
+        max-width: 80%;
     }
     .product-list {
         flex-direction: column;
@@ -439,8 +439,8 @@ footer img {
     }
 
     .product {
-        width: calc(50% -20px);
-        margin: 10px 0;
+        width: calc(50% - 20px);
+        margin: 10px;
     }
 
     #search-bar {
