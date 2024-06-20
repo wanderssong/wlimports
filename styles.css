@@ -433,8 +433,8 @@ footer img {
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .modal-content{
-        width: 70%;
-        max-width: 80%;
+        width: 60%;
+        max-width: 70%;
     }
     .product-list {
         flex-wrap: nowrap;
@@ -443,7 +443,7 @@ footer img {
     }
 
     .product {
-        width: calc(50% - 20px); /* 50% da largura com espaço entre os produtos */
+        width: calc(80% - 20px); /* 50% da largura com espaço entre os produtos */
         height: auto; /* Altura automática para ajustar conteúdo */
         margin: 10px; /* Espaçamento entre os produtos */
     }
