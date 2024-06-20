@@ -52,6 +52,8 @@ header {
     margin-top: 10px; /* Adiciona margem superior para separação do h1 */
     animation: glowing 1.5s infinite;
 }
+
+
 @keyframes glow {
     0% {
         border-color: #f16b05;
@@ -421,13 +423,22 @@ footer img {
     border-radius: 5px;
     z-index: 1000;
     font-size: 18px;
-    animation: slideAndFade 3s ease-in-out forwards;
+    animation: fadeInUp 0.5s ease-out forwards;
 }
 
 .toast.show {
     display: block;
 }
-
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(0);
+    }
+    10% {
+        opacity: 1; /* Aparece rapidamente */
+    }
+    
+}
 #endereco-form {
     margin-top: 20px;
     text-align: center;
