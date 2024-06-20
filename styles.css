@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundo.png?raw=true);
+    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundofooter.jpg?raw=true);
     color: #fff;
     padding: 0px 0; /* Ajuste de padding para separação superior e inferior */
     display: flex;
@@ -99,6 +99,40 @@ section h2 {
 
 h1 {
     margin-top: 20px; /* Adiciona margem superior para separação do campo de busca */
+}
+/* CSS para o elemento h2 */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  overflow: hidden; /* Para esconder a borda inicialmente */
+}
+
+/* Pseudo-elemento para a borda */
+h2::after {
+  content: ''; /* Criando um pseudo-elemento para a borda */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Altura da borda */
+  background-color: #ff9500; /* Cor da borda */
+  animation: pulseBorder 2s linear infinite; /* Animando a borda continuamente */
+}
+
+/* Keyframes para a animação de pulsação */
+@keyframes pulseBorder {
+  0% {
+    transform: scaleX(0); /* Começa sem largura */
+  }
+  50% {
+    transform: scaleX(1); /* Cresce até a largura total */
+  }
+  100% {
+    transform: scaleX(0); /* Volta para sem largura */
+  }
 }
 
 h6 {
@@ -452,4 +486,58 @@ footer img {
 
 #cart-items li button:active {
     transform: scale(0.95);
+}
+/* Estilo base para o ícone da sacola */
+#cart-icon {
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #0c0c0c;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    animation: pulse-border 2s infinite;
+}
+
+/* Animação de pulso nas bordas */
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(251, 105, 1, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* Classe para animação ao adicionar produto ao carrinho */
+@keyframes add-to-cart-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplicar a classe de animação */
+.add-to-cart {
+    animation: add-to-cart-animation 0.5s ease;
+}
+
+/* Remova a animação quando o mouse estiver sobre o ícone */
+#cart-icon:hover {
+    animation: none; /* Remove a animação ao passar o mouse */
+}
+
+#cart-icon img {
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
 }
