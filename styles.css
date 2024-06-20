@@ -439,6 +439,7 @@ footer img {
         padding: 10px; /* Espaçamento interno */
         gap: 10px; /* Espaçamento entre os produtos */
         justify-content: flex-end; /* Alinhamento dos produtos à direita */
+        width: 100%; /* Largura total da lista de produtos */
     }
 
     /* Estilo de cada produto */
