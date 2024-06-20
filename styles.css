@@ -422,7 +422,7 @@ footer img {
     background-color: #128C7E;
 }
 
-/* Media queries para responsividade */
+/* Media queries para responsividade  MOBILE */
 @media (max-width: 768px) {
     /* Ajustes no modal de produtos */
     .modal-content {
@@ -491,9 +491,10 @@ footer img {
 
     /* Estilo do botão dentro do produto */
     .product button {
-        font-size: 10px; /* Tamanho da fonte do botão */
-        padding: 3px; /* Espaçamento interno do botão */
+        font-size: 11px; /* Tamanho da fonte do botão */
+        padding: 5px; /* Espaçamento interno do botão */
         margin-top: 3px; /* Espaçamento superior do botão */
+        margin-right: 5px;   /* Espaçamento um botão para o outro */
         width: 80%; /* Largura total do botão */
         border-radius: 5px; /* Cantos arredondados */
     }
