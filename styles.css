@@ -438,7 +438,7 @@ footer img {
 
     .product {
         width: 220px; /* Ajusta a largura dos produtos */
-        height: 290px; /* Ajusta a altura dos produtos */
+        height: 310px; /* Ajusta a altura dos produtos */
         margin: 10px; /* Espaçamento entre os produtos */
         flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
     }
