@@ -450,7 +450,7 @@ footer img {
     }
 
     .product h2 {
-        font-size: 9px; /* Tamanho da fonte do título ajustado para ser legível */
+        font-size: 5px; /* Tamanho da fonte do título ajustado para ser legível */
         margin: 3px 0; /* Espaçamento do título */
         max-height: 36px; /* Altura máxima do título */
         overflow: hidden;
@@ -461,7 +461,7 @@ footer img {
     .product p {
         font-size: 12px; /* Tamanho da fonte do texto ajustado */
         color: #333;
-        max-height: 40px; /* Altura máxima do texto */
+        max-height: 80px; /* Altura máxima do texto */
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -469,12 +469,12 @@ footer img {
     .product button {
         font-size: 12px; /* Tamanho da fonte do botão ajustado */
         margin-top: 3px;
-        padding: 5px
+        padding: 3px
     }
 
     #search-bar {
         width: calc(100% - 30px);
-        margin: 10px 20px;
+        margin: 10px 40px;
     }
 
     header {
