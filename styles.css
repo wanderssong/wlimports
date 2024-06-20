@@ -436,6 +436,7 @@ footer img {
         overflow-x: auto; /* Permite a rolagem horizontal */
         padding: 10px; /* Adicionar espaçamento interno */
         gap: 10px; /* Espaçamento entre os produtos */
+        height: auto; /* Ajustar altura para evitar rolagem vertical */
     }
 
     .product {
@@ -443,10 +444,12 @@ footer img {
         width: 150px; /* Ajustar a largura dos produtos para mobile */
         height: 250px; /* Ajustar a altura dos produtos para mobile */
         margin: 0 5px; /* Espaçamento horizontal entre os produtos */
+        overflow: hidden; /* Garantir que o conteúdo não exceda a altura */
     }
 
     .product img {
         width: 100%; /* Certifica-se de que a imagem ocupa toda a largura do contêiner */
+        height: auto; /* Ajustar altura para manter proporção */
         border-radius: 10px 10px 0 0;
     }
 
