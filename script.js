@@ -7,9 +7,11 @@ function adicionarAoCarrinho(nome, valor) {
     document.getElementById('cart-icon').classList.add('add-to-cart'); // Adiciona a classe de animação
     setTimeout(() => {
         document.getElementById('cart-icon').classList.remove('add-to-cart'); // Remove a classe após a animação
-    }, 500); // Tempo da animação em milissegundos
+    }, 200); // Tempo da animação em milissegundos
     showToast(); // Chama a função de notificação
+    
 }
+
 
 function atualizarContadorCarrinho() {
     const cartCount = document.getElementById('cart-count');
@@ -128,7 +130,7 @@ function filtrarProdutos() {
 function showToast() {
     const toast = document.getElementById('toast');
     toast.className = 'toast show';
-    setTimeout(() => { toast.className = toast.className.replace('show', ''); }, 3000);
+    setTimeout(() => { toast.className = toast.className.replace('show', ''); }, 1000);
 }
 
 // Evento de mudança no select de forma de pagamento
