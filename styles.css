@@ -154,7 +154,7 @@ h6 {
     margin: 10px;
     padding: 15px; /* Diminuir o padding */
     text-align: center;
-    width: 150px; /* Diminuir a largura */
+    width: 200px; /* Diminuir a largura */
     box-shadow: 0 2px 5px rgba(253, 252, 252, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     animation: glowing 1.5s infinite;
@@ -432,6 +432,7 @@ footer img {
         flex-direction: column;
         align-items: center;
         display: flex;
+        width: 90px;
     }
 
     .product {
