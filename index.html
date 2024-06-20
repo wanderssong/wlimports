@@ -16,7 +16,7 @@
         <button id="cart-button" onclick="mostrarCarrinho()">Carrinho (<span id="cart-count">0</span>)</button>
     </header>
     <div id="cart-icon" onclick="mostrarCarrinho()">
-        <img src="https://github.com/wanderssong/wlimports/blob/main/Img/iconeSacola.png?raw=true" alt="Ícone do Carrinho">
+        <img src="https://github.com/wanderssong/wlimports/blob/main/Img/iconeSacola.png?raw=true" alt="Cart Icon">
         <span id="cart-count-bottom">0</span> <!-- Contador de itens no carrinho -->
     </div>
     
@@ -33,7 +33,7 @@
                 </div>
                 <div class="product">
                     <img src="https://m.media-amazon.com/images/I/611sWbtw5oL._AC_UF1000,1000_QL80_.jpg" alt="Produto 2">
-                    <h3>JBL, Caixa de Som, Go Essential, À Prova D'água</h3>
+                    <h3>JBL, Caixa de Som, Go À Prova D'água</h3>
                     <p>R$ 280,00</p>
                     <button onclick="abrirProdutoModal('JBL, Caixa de Som, Go Essential, À Prova D água', '280,00', 'https://m.media-amazon.com/images/I/611sWbtw5oL._AC_UF1000,1000_QL80_.jpg', 'SOM ENVOLVENTE JBL. Sinta a qualidade de sonora profissional da JBL na caixa de som Go Essential, onde a potência som premium se une ao design compacto e ultraleve.')">Ver Detalhes</button>
                     <button onclick="adicionarAoCarrinho('JBL, Caixa de Som, Go Essential, À Prova D água', '280,00')">Adicionar ao Carrinho</button>
@@ -232,9 +232,14 @@
     </div>
 
     <footer>
-        <p> wanderssong545@gmail.com</p>
-        <p> 66 9 9696-7406 / 11 9 4292-0043</p>
-        <h1> Taxa de entrega fixa dentro de Sinop </h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/wgdesign.snp?igsh=MXE2cDZiN3F6b2xlZA==" target="_blank" rel="noopener noreferrer">
+                <img src="https://github.com/wanderssong/wlimports/blob/main/Img/IconInsta.png?raw=true" alt="Ícone do Instagram" class="instagram-icon">
+            </a>
+        </div>
+        <p>Email: wanderssong545@gmail.com</p>
+        <p>Telefones: 66 9 9696-7406 / 11 9 4292-0043</p>
+        <h1>Taxa de entrega fixa dentro de Sinop</h1>
         <img src="Img/logo.png" alt="Logo da Loja" class="logo">
     </footer>
     <script src="script.js"></script>
