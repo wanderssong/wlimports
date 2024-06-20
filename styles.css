@@ -52,13 +52,11 @@ header {
     margin-top: 10px; /* Adiciona margem superior para separação do h1 */
     animation: glowing 1.5s infinite;
 }
-
 @keyframes glowing {                 /* Adiciona borda animada no produtos */
     0% { box-shadow: 0 0 5px #f16b05; }
     50% { box-shadow: 0 0 20px #f16b05; }
     100% { box-shadow: 0 0 5px #f16b05; }
 }
-
 @keyframes slideAndFade {          /* Adiciona animacao na menssagem de adicionado ao carrinho */
     0% {
         opacity: 0;
@@ -102,40 +100,39 @@ section h2 {
 h1 {
     margin-top: 20px; /* Adiciona margem superior para separação do campo de busca */
 }
-
 /* CSS para o elemento h2 */
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-    overflow: hidden; /* Para esconder a borda inicialmente */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  overflow: hidden; /* Para esconder a borda inicialmente */
 }
 
 /* Pseudo-elemento para a borda */
 h2::after {
-    content: ''; /* Criando um pseudo-elemento para a borda */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px; /* Altura da borda */
-    background-color: #ff9500; /* Cor da borda */
-    animation: pulseBorder 2s linear infinite; /* Animando a borda continuamente */
+  content: ''; /* Criando um pseudo-elemento para a borda */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Altura da borda */
+  background-color: #ff9500; /* Cor da borda */
+  animation: pulseBorder 2s linear infinite; /* Animando a borda continuamente */
 }
 
 /* Keyframes para a animação de pulsação */
 @keyframes pulseBorder {
-    0% {
-        transform: scaleX(0); /* Começa sem largura */
-    }
-    50% {
-        transform: scaleX(1); /* Cresce até a largura total */
-    }
-    100% {
-        transform: scaleX(0); /* Volta para sem largura */
-    }
+  0% {
+    transform: scaleX(0); /* Começa sem largura */
+  }
+  50% {
+    transform: scaleX(1); /* Cresce até a largura total */
+  }
+  100% {
+    transform: scaleX(0); /* Volta para sem largura */
+  }
 }
 
 h6 {
@@ -146,7 +143,7 @@ h6 {
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -155,11 +152,10 @@ h6 {
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 10px;
-    padding: 23px; /* Ajusta o padding */
+    padding: 15px; /* Diminuir o padding */
     text-align: center;
-    width: 220px; /* Aumenta a largura */
-    height: 370; /* Aumenta a altura */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Diminuir a largura */
+    box-shadow: 0 2px 5px rgba(253, 252, 252, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     animation: glowing 1.5s infinite;
 }
@@ -170,20 +166,18 @@ h6 {
 }
 
 .product img {
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
 .product h2 {
-    font-size: 14px; /* Ajusta o tamanho da fonte do título */
+    font-size: 16px; /* Ajustar tamanho da fonte */
     margin: 10px 0;
 }
 
 .product p {
-    font-size: 18px; /* Ajusta o tamanho da fonte do texto */
+    font-size: 14px; /* Ajustar tamanho da fonte */
     color: #333;
-    
-    
 }
 
 .product button {
@@ -191,15 +185,14 @@ h6 {
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 7px 19px; /* Ajusta o padding do botão */
+    padding: 5px; /* Ajustar o padding */
     cursor: pointer;
-    font-size: 15px; /* Ajusta o tamanho da fonte do botão */
-    margin-top: 3px; /* Adiciona margem acima do botão */
-    
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    margin-bottom: 5px;
 }
 
 .product button:hover {
-    background-color: #128C7E;
+    background-color: #ef6401;
 }
 
 input[type="text"] {
@@ -271,7 +264,6 @@ button:active {
     background-color: rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.3s ease-out forwards;
 }
-
 @keyframes slideIn {
     0% {
         opacity: 0;
@@ -431,62 +423,21 @@ footer img {
 }
 
 /* Media queries para responsividade */
-
 @media (max-width: 768px) {
+    .modal-content{
+        width: 80%;
+        max-width: 80%;
+    }
     .product-list {
+        flex-direction: column;
+        align-items: center;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px;
-        overflow-x: auto; /* Adiciona rolagem horizontal se os produtos não couberem na tela */
     }
 
     .product {
-        width: 220px; /* Largura fixa do produto */
-        height: 330px; /* Altura fixa do produto */
-        margin: 10px; /* Espaçamento entre os produtos */
-        text-align: center; /* Centraliza o conteúdo dentro do produto */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões definidas */
+        width: 90%;
+        margin: 10px 0;
     }
-
-    .product img {
-        width: 100%; /* Garante que a imagem se ajuste dentro do contêiner */
-        height: auto;
-        border-radius: 10px 10px 0 0; /* Adiciona borda arredondada apenas no topo */
-    }
-
-    .product h2 {
-        font-size: 14px; /* Tamanho da fonte do título */
-        margin: 10px 0; /* Espaçamento do título */
-        max-height: 50px; /* Altura máxima do título */
-        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões definidas */
-        text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
-        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-    }
-
-    .product p {
-        font-size: 12px; /* Tamanho da fonte do texto */
-        color: #333;
-        max-height: 60px; /* Altura máxima do texto */
-        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões definidas */
-        text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
-    }
-
-    .product button {
-        background-color: #25D366;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 12px; /* Tamanho da fonte do botão */
-        margin-top: 10px; /* Espaçamento acima do botão */
-        width: 100%; /* Ocupa a largura completa do elemento pai */
-    }
-}
-
 
     #search-bar {
         width: calc(100% - 30px);
@@ -514,7 +465,7 @@ footer img {
         margin: 10px 20px;
         align-self: center;
     }
-
+}
 
 /* Estilização adicional para os botões do carrinho */
 #cart-items li button {
@@ -549,7 +500,6 @@ footer img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     animation: pulse-border 2s infinite;
-    z-index: 10000;
 }
 
 /* Animação de pulso nas bordas */
@@ -565,7 +515,18 @@ footer img {
     }
 }
 
-
+/* Classe para animação ao adicionar produto ao carrinho */
+@keyframes add-to-cart-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* Aplicar a classe de animação */
 .add-to-cart {
