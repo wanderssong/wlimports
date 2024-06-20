@@ -450,9 +450,9 @@ footer img {
     }
 
     .product h2 {
-        font-size: 9px; /* Tamanho da fonte do título */
+        font-size: 7px; /* Tamanho da fonte do título */
         margin: 5px 0; /* Espaçamento do título */
-        max-height: 40px; /* Altura máxima do título */
+        max-height: 36px; /* Altura máxima do título */
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
