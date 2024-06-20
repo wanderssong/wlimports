@@ -495,9 +495,9 @@ footer img {
     .product button {
         font-size: 12px; /* Tamanho da fonte do botão */
         padding: 6px; /* Espaçamento interno do botão */
-        margin-top: 3px; /* Espaçamento superior do botão */
+        margin-top: 1px; /* Espaçamento superior do botão */
         margin-right: 1px;   /* Espaçamento um botão para o outro */
-        width: 80%; /* Largura total do botão */
+        width: 90%; /* Largura total do botão */
         border-radius: 5px; /* Cantos arredondados */
     }
 
