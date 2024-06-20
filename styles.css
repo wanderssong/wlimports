@@ -425,8 +425,8 @@ footer img {
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .modal-content{
-        width: 40%;
-        max-width: 40%;
+        width: 80%;
+        max-width: 80%;
     }
     .product-list {
         flex-direction: column;
