@@ -425,8 +425,8 @@ footer img {
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .modal-content {
-        width: 90%; /* Aumentar a largura para 90% */
-        max-width: 90%; /* Garantir que a largura máxima seja 90% */
+        width: 80%; /* Aumentar a largura para 80% */
+        max-width: 80%; /* Garantir que a largura máxima seja 90% */
         margin: 20% auto; /* Centralizar o conteúdo */
     }
 
@@ -438,8 +438,8 @@ footer img {
     }
 
     .product {
-        width: 220px; /* Ajusta a largura dos produtos */
-        height: 310px; /* Ajusta a altura dos produtos */
+        width: 120px; /* Ajusta a largura dos produtos */
+        height: 210px; /* Ajusta a altura dos produtos */
         margin: 7px; /* Espaçamento entre os produtos */
         flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
     }
