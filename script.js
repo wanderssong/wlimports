@@ -3,7 +3,19 @@ let carrinho = [];
 function adicionarAoCarrinho(nome, valor) {
     carrinho.push({ nome, valor: parseFloat(valor.replace(',', '.')) });
     atualizarCarrinho();
+    atualizarContadorCarrinho(); // Atualiza o contador de itens no carrinho
+    document.getElementById('cart-icon').classList.add('add-to-cart'); // Adiciona a classe de animação
+    setTimeout(() => {
+        document.getElementById('cart-icon').classList.remove('add-to-cart'); // Remove a classe após a animação
+    }, 500); // Tempo da animação em milissegundos
     showToast(); // Chama a função de notificação
+}
+
+function atualizarContadorCarrinho() {
+    const cartCount = document.getElementById('cart-count');
+    const cartCountBottom = document.getElementById('cart-count-bottom');
+    cartCount.innerText = carrinho.length;
+    cartCountBottom.innerText = carrinho.length; // Atualiza também o contador na parte inferior da tela
 }
 
 function atualizarCarrinho() {
@@ -83,6 +95,7 @@ function enviarPedido() {
 function removerDoCarrinho(index) {
     carrinho.splice(index, 1);
     atualizarCarrinho();
+    atualizarContadorCarrinho();
 }
 
 function abrirProdutoModal(nome, preco, imagem, descricao) {
