@@ -426,6 +426,7 @@ footer img {
 @media (max-width: 768px) {
     /* Ajustes no modal de produtos */
     .modal-content {
+        position: fixed;
         width: 80%; /* Largura do modal de produtos */
         max-width: 80%; /* Largura máxima do modal */
         margin: 20% auto; /* Centralização do modal na tela */
