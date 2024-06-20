@@ -440,14 +440,14 @@ footer img {
     
         .product {
             width: calc(80% - 40px); /* Largura total com espaço entre os produtos */
-            height: 280px; /* Altura automática para ajustar conteúdo */
-            margin: 10px; /* Espaçamento entre os produtos */
+            height: 260px; /* Altura automática para ajustar conteúdo */
+            margin: 5px; /* Espaçamento entre os produtos */
         }
     
         .product h2 {
-            font-size: 9px; /* Reduz o tamanho da fonte do título no mobile */
+            font-size: 7px; /* Reduz o tamanho da fonte do título no mobile */
             margin: 5px 0; /* Ajusta a margem do título */
-            max-height: 36px; /* Limita a altura do título */
+            max-height: 40px; /* Limita a altura do título */
         }
     
         .product p {
@@ -458,6 +458,7 @@ footer img {
         .product button {
             font-size: 10px; /* Reduz o tamanho da fonte do botão no mobile */
             margin-top: 3px; /* Ajusta a margem acima do botão */
+            padding: 7px 10px;
         }
     }
 
