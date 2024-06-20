@@ -440,7 +440,7 @@ footer img {
     
         .product {
             width: calc(80% - 40px); /* Largura total com espaço entre os produtos */
-            height: 260px; /* Altura automática para ajustar conteúdo */
+            height: 290px; /* Altura automática para ajustar conteúdo */
             margin: 5px; /* Espaçamento entre os produtos */
         }
     
@@ -458,7 +458,7 @@ footer img {
         .product button {
             font-size: 10px; /* Reduz o tamanho da fonte do botão no mobile */
             margin-top: 3px; /* Ajusta a margem acima do botão */
-            padding: 7px 10px;
+            
         }
     }
 
