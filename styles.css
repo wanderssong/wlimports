@@ -439,7 +439,7 @@ footer img {
         }
     
         .product {
-            width: 220px; /* Largura total com espaço entre os produtos */
+            width: 300px; /* Largura total com espaço entre os produtos */
             height: 290px; /* Altura para ajustar conteúdo */
             margin: 5px; /* Espaçamento entre os produtos */
         }
