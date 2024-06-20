@@ -429,7 +429,7 @@ footer img {
 }
 
 .toast.show {
-    display: block;
+    display: flex;
 }
 @keyframes fadeInOut {
     0% {
