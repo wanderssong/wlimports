@@ -424,20 +424,52 @@ footer img {
 
 /* Media queries para responsividade */
 @media (max-width: 768px) {
-    .modal-content{
+    .modal-content {
         width: 80%;
         max-width: 80%;
     }
+
     .product-list {
-        flex-direction: column;
-        align-items: center;
         display: flex;
-        width: 90px;
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Permite a rolagem horizontal */
+        padding: 10px; /* Adiciona espaçamento interno */
     }
 
     .product {
-        width: 90%;
-        margin: 10px 0;
+        width: 240px; /* Aumenta a largura dos produtos */
+        height: 330px; /* Define uma altura fixa */
+        margin: 10px; /* Espaçamento entre os produtos */
+        flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .product h2 {
+        font-size: 12px; /* Tamanho da fonte do título */
+        margin: 5px 0; /* Espaçamento do título */
+        max-height: 40px; /* Altura máxima do título */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .product p {
+        font-size: 10px; /* Tamanho da fonte do texto */
+        color: #333;
+        max-height: 50px; /* Altura máxima do texto */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .product button {
+        font-size: 10px; /* Tamanho da fonte do botão */
+        margin-top: 3px;
+        padding: 5px;
     }
 
     #search-bar {
@@ -467,7 +499,6 @@ footer img {
         align-self: center;
     }
 }
-
 /* Estilização adicional para os botões do carrinho */
 #cart-items li button {
     background-color: #f10505;
