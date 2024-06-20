@@ -475,9 +475,9 @@ footer img {
 
     /* Estilo do título (h2) dentro do produto */
     .product h2 {
-        font-size: 12px; /* Tamanho da fonte do título */
-        margin: 5px 0; /* Espaçamento ao redor do título */
-        max-height: 36px; /* Altura máxima do título */
+        font-size: 11px; /* Tamanho da fonte do título */
+        margin: 3px 0; /* Espaçamento ao redor do título */
+        max-height: 30px; /* Altura máxima do título */
         overflow: hidden; /* Esconde texto que exceder a caixa */
         text-overflow: ellipsis; /* Texto truncado com reticências */
         white-space: nowrap; /* Não permite quebras de linha */
@@ -488,7 +488,7 @@ footer img {
     .product p {
         font-size: 13px; /* Tamanho da fonte do texto */
         color: #333; /* Cor do texto */
-        max-height: 36px; /* Altura máxima do texto */
+        max-height: 30px; /* Altura máxima do texto */
         overflow: hidden; /* Esconde texto que exceder a caixa */
         text-overflow: ellipsis; /* Texto truncado com reticências */
         text-align: center; /* Alinhamento central do texto */
@@ -497,9 +497,9 @@ footer img {
     /* Estilo do botão dentro do produto */
     .product button {
         font-size: 12px; /* Tamanho da fonte do botão */
-        padding: 6px; /* Espaçamento interno do botão */
+        padding: 8px; /* Espaçamento interno do botão */
         margin-top: 1px; /* Espaçamento superior do botão */
-        margin-right: 1px;   /* Espaçamento um botão para o outro */
+        margin-right: 18px;   /* Espaçamento um botão para o outro */
         width: 90%; /* Largura total do botão */
         border-radius: 5px; /* Cantos arredondados */
     }
