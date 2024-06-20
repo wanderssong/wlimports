@@ -437,8 +437,8 @@ footer img {
     }
 
     .product {
-        width: 240px; /* Aumenta a largura dos produtos */
-        height: 330px; /* Define uma altura fixa */
+        width: 220px; /* Ajusta a largura dos produtos */
+        height: 280px; /* Ajusta a altura dos produtos */
         margin: 10px; /* Espaçamento entre os produtos */
         flex: 0 0 auto; /* Garante que os produtos não encolham e fiquem lado a lado */
     }
@@ -461,7 +461,7 @@ footer img {
     .product p {
         font-size: 10px; /* Tamanho da fonte do texto */
         color: #333;
-        max-height: 50px; /* Altura máxima do texto */
+        max-height: 40px; /* Altura máxima do texto */
         overflow: hidden;
         text-overflow: ellipsis;
     }
