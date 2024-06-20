@@ -496,7 +496,7 @@ footer img {
         font-size: 12px; /* Tamanho da fonte do botão */
         padding: 6px; /* Espaçamento interno do botão */
         margin-top: 3px; /* Espaçamento superior do botão */
-        margin-right: 3px;   /* Espaçamento um botão para o outro */
+        margin-right: 1px;   /* Espaçamento um botão para o outro */
         width: 80%; /* Largura total do botão */
         border-radius: 5px; /* Cantos arredondados */
     }
