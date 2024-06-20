@@ -435,11 +435,11 @@ footer img {
     .product-list {
         flex-direction: column;
         align-items: center;
-        display: flex;
+        
     }
 
     .product {
-        width: 90%;
+        width: calc(50% -20px);
         margin: 10px 0;
     }
 
@@ -504,6 +504,7 @@ footer img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     animation: pulse-border 2s infinite;
+    z-index: 10000;
 }
 
 /* Animação de pulso nas bordas */
@@ -519,18 +520,7 @@ footer img {
     }
 }
 
-/* Classe para animação ao adicionar produto ao carrinho */
-@keyframes add-to-cart-animation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+
 
 /* Aplicar a classe de animação */
 .add-to-cart {
