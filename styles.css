@@ -432,39 +432,60 @@ footer img {
 
 /* Media queries para responsividade */
 
-    @media (max-width: 768px) {
-        .modal-content{
-            width: 70%;
-            max-width: 80%;
-        }
-        .product-list {
-            flex-wrap: nowrap;
-            overflow-x: auto; /* Adiciona rolagem horizontal se os produtos não couberem na tela */
-        }
-    
-        .product {
-            width: 500px; /* Largura total com espaço entre os produtos */
-            height: 290px; /* Altura para ajustar conteúdo */
-            margin: 5px; /* Espaçamento entre os produtos */
-        }
-    
-        .product h2 {
-            font-size: 7px; /* Reduz o tamanho da fonte do título no mobile */
-            margin: 5px 0; /* Ajusta a margem do título */
-            max-height: 40px; /* Limita a altura do título */
-        }
-    
-        .product p {
-            font-size: 10px; /* Reduz o tamanho da fonte do texto no mobile */
-            max-height: 50px; /* Limita a altura do texto */
-        }
-    
-        .product button {
-            font-size: 10px; /* Reduz o tamanho da fonte do botão no mobile */
-            margin-top: 3px; /* Ajusta a margem acima do botão */
-            
-        }
+@media (max-width: 768px) {
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        overflow-x: auto; /* Adiciona rolagem horizontal se os produtos não couberem na tela */
     }
+
+    .product {
+        width: 220px; /* Largura fixa do produto */
+        height: 330px; /* Altura fixa do produto */
+        margin: 10px; /* Espaçamento entre os produtos */
+        text-align: center; /* Centraliza o conteúdo dentro do produto */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões definidas */
+    }
+
+    .product img {
+        width: 100%; /* Garante que a imagem se ajuste dentro do contêiner */
+        height: auto;
+        border-radius: 10px 10px 0 0; /* Adiciona borda arredondada apenas no topo */
+    }
+
+    .product h2 {
+        font-size: 14px; /* Tamanho da fonte do título */
+        margin: 10px 0; /* Espaçamento do título */
+        max-height: 50px; /* Altura máxima do título */
+        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões definidas */
+        text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    }
+
+    .product p {
+        font-size: 12px; /* Tamanho da fonte do texto */
+        color: #333;
+        max-height: 60px; /* Altura máxima do texto */
+        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões definidas */
+        text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    }
+
+    .product button {
+        background-color: #25D366;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 12px; /* Tamanho da fonte do botão */
+        margin-top: 10px; /* Espaçamento acima do botão */
+        width: 100%; /* Ocupa a largura completa do elemento pai */
+    }
+}
 
 
     #search-bar {
