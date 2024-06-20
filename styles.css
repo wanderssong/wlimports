@@ -436,6 +436,8 @@ footer img {
         overflow-x: auto; /* Permite a rolagem horizontal */
         padding: 10px; /* Adicionar espaçamento interno */
         gap: 10px; /* Espaçamento entre os produtos */
+        width: 100vw; /* Usar a largura total da viewport */
+        box-sizing: border-box; /* Incluir padding e bordas no cálculo da largura */
     }
 
     .product {
