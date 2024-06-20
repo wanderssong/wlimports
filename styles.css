@@ -486,7 +486,7 @@ footer img {
 
     /* Estilo do texto (p) dentro do produto */
     .product p {
-        font-size: 13px; /* Tamanho da fonte do texto */
+        font-size: 14px; /* Tamanho da fonte do texto */
         color: #333; /* Cor do texto */
         max-height: 30px; /* Altura máxima do texto */
         overflow: hidden; /* Esconde texto que exceder a caixa */
