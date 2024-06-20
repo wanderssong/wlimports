@@ -426,8 +426,8 @@ footer img {
 @media (max-width: 768px) {
     /* Ajustes no modal de produtos */
     .modal-content {
-        width: 90%; /* Largura do modal de produtos */
-        max-width: 90%; /* Largura máxima do modal */
+        width: 80%; /* Largura do modal de produtos */
+        max-width: 80%; /* Largura máxima do modal */
         margin: 20% auto; /* Centralização do modal na tela */
     }
 
@@ -481,7 +481,7 @@ footer img {
 
     /* Estilo do texto (p) dentro do produto */
     .product p {
-        font-size: 10px; /* Tamanho da fonte do texto */
+        font-size: 12px; /* Tamanho da fonte do texto */
         color: #333; /* Cor do texto */
         max-height: 40px; /* Altura máxima do texto */
         overflow: hidden; /* Esconde texto que exceder a caixa */
@@ -492,9 +492,9 @@ footer img {
     /* Estilo do botão dentro do produto */
     .product button {
         font-size: 10px; /* Tamanho da fonte do botão */
-        padding: 5px; /* Espaçamento interno do botão */
+        padding: 7px; /* Espaçamento interno do botão */
         margin-top: 3px; /* Espaçamento superior do botão */
-        width: 100%; /* Largura total do botão */
+        width: 80%; /* Largura total do botão */
         border-radius: 5px; /* Cantos arredondados */
     }
 
