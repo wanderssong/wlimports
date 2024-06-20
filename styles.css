@@ -424,88 +424,99 @@ footer img {
 
 /* Media queries para responsividade */
 @media (max-width: 768px) {
+    /* Ajustes no modal de produtos */
     .modal-content {
-        width: 90%;
-        max-width: 90%;
-        margin: 20% auto;
+        width: 80%; /* Largura do modal de produtos */
+        max-width: 80%; /* Largura máxima do modal */
+        margin: 20% auto; /* Centralização do modal na tela */
     }
 
+    /* Configurações da lista de produtos */
     .product-list {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding: 10px;
+        display: flex; /* Layout de exibição flexível */
+        flex-wrap: nowrap; /* Não permite quebrar linha */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        padding: 10px; /* Espaçamento interno */
         gap: 10px; /* Espaçamento entre os produtos */
     }
 
+    /* Estilo de cada produto */
     .product {
-        flex: 0 0 auto;
+        flex: 0 0 auto; /* Produtos não encolhem */
         width: 150px; /* Largura dos produtos */
         margin: 0 5px; /* Espaçamento horizontal entre os produtos */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 10px;
+        display: flex; /* Layout de exibição flexível */
+        flex-direction: column; /* Itens dispostos em coluna */
+        align-items: center; /* Alinhamento no centro */
+        justify-content: space-between; /* Distribuição do espaço entre os itens */
+        overflow: hidden; /* Esconde conteúdo que exceder a caixa */
+        background-color: #fff; /* Fundo branco */
+        border-radius: 10px; /* Cantos arredondados */
+        padding: 10px; /* Espaçamento interno */
     }
 
+    /* Estilo da imagem dentro do produto */
     .product img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px 10px 0 0;
-        max-height: 100px;
+        width: 100%; /* Imagem ocupa toda a largura do contêiner */
+        height: auto; /* Altura automática, mantendo proporção */
+        border-radius: 10px 10px 0 0; /* Cantos arredondados */
+        max-height: 100px; /* Altura máxima da imagem */
     }
 
+    /* Estilo do título (h2) dentro do produto */
     .product h2 {
-        font-size: 12px;
-        margin: 5px 0;
-        max-height: 36px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        text-align: center;
+        font-size: 7px; /* Tamanho da fonte do título */
+        margin: 5px 0; /* Espaçamento ao redor do título */
+        max-height: 36px; /* Altura máxima do título */
+        overflow: hidden; /* Esconde texto que exceder a caixa */
+        text-overflow: ellipsis; /* Texto truncado com reticências */
+        white-space: nowrap; /* Não permite quebras de linha */
+        text-align: center; /* Alinhamento central do texto */
     }
 
+    /* Estilo do texto (p) dentro do produto */
     .product p {
-        font-size: 10px;
-        color: #333;
-        max-height: 40px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: center;
+        font-size: 10px; /* Tamanho da fonte do texto */
+        color: #333; /* Cor do texto */
+        max-height: 40px; /* Altura máxima do texto */
+        overflow: hidden; /* Esconde texto que exceder a caixa */
+        text-overflow: ellipsis; /* Texto truncado com reticências */
+        text-align: center; /* Alinhamento central do texto */
     }
 
+    /* Estilo do botão dentro do produto */
     .product button {
-        font-size: 10px;
-        padding: 5px;
-        margin-top: 3px;
-        width: 100%;
-        border-radius: 5px;
+        font-size: 10px; /* Tamanho da fonte do botão */
+        padding: 5px; /* Espaçamento interno do botão */
+        margin-top: 3px; /* Espaçamento superior do botão */
+        width: 80%; /* Largura total do botão */
+        border-radius: 5px; /* Cantos arredondados */
     }
 
+    /* Estilo da barra de pesquisa */
     #search-bar {
-        width: calc(100% - 40px);
-        margin: 10px 20px;
+        width: calc(100% - 40px); /* Largura da barra de pesquisa */
+        margin: 10px 20px; /* Espaçamento ao redor da barra de pesquisa */
     }
 
+    /* Ajustes no cabeçalho */
     header {
-        flex-direction: column;
+        flex-direction: column; /* Itens dispostos em coluna */
     }
 
+    /* Ajustes no rodapé */
     footer img {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        margin-top: 10px;
+        position: relative; /* Posição relativa */
+        bottom: auto; /* Sem posicionamento inferior fixo */
+        right: auto; /* Sem posicionamento à direita fixo */
+        margin-top: 10px; /* Espaçamento superior */
     }
 
+    /* Ajustes no botão de carrinho */
     #cart-button {
-        width: calc(100% - 40px);
-        margin: 10px 20px;
-        align-self: center;
+        width: calc(100% - 40px); /* Largura do botão de carrinho */
+        margin: 10px 20px; /* Espaçamento ao redor do botão */
+        align-self: center; /* Alinhamento centralizado */
     }
 }
 /* Estilização adicional para os botões do carrinho */
