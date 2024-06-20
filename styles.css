@@ -440,7 +440,7 @@ footer img {
     
         .product {
             width: calc(80% - 40px); /* Largura total com espaço entre os produtos */
-            height: auto; /* Altura automática para ajustar conteúdo */
+            height: 200px; /* Altura automática para ajustar conteúdo */
             margin: 10px; /* Espaçamento entre os produtos */
         }
     
