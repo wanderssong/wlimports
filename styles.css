@@ -310,9 +310,10 @@ button:active {
 footer {
     background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundofooter.jpg?raw=true);
     color: #fff;
-    padding: 2px;
+    padding: 20px;
     text-align: center;
     position: relative;
+    overflow: hidden; /* Garante que elementos posicionados absolutamente não ultrapassem os limites do footer */
 }
 
 footer img {
@@ -321,6 +322,19 @@ footer img {
     right: 10px;
     width: 160px;
     height: auto;
+}
+
+.social-icons {
+    
+    position:absolute;
+    bottom: 55px; /* Distância do ícone até a borda inferior do footer */
+    left: 10px; /* Distância do ícone até a borda esquerda do footer */
+    width: 100px;
+}
+
+.instagram-icon {
+    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 #cart-items {
