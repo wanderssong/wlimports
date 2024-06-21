@@ -9,9 +9,7 @@ function adicionarAoCarrinho(nome, valor) {
         document.getElementById('cart-icon').classList.remove('add-to-cart'); // Remove a classe após a animação
     }, 500); // Tempo da animação em milissegundos
     showToast(); // Chama a função de notificação
-    
 }
-
 
 function atualizarContadorCarrinho() {
     const cartCount = document.getElementById('cart-count');
@@ -83,8 +81,8 @@ function enviarPedido() {
     mensagem += `\nEndereço para entrega: ${enderecoCliente}`;
     mensagem += `\nForma de Pagamento: ${formaPagamento}`;
 
-    if (formaPagamento === 'dinheiro') {
-        const troco = document.getElementById('troco-valor').value;
+    if (formaPagamento === 'Dinheiro') { // Conforme seu código, deve ser 'Dinheiro' com D maiúsculo
+        const troco = document.getElementById('troco').value;
         if (troco) {
             mensagem += `\nPrecisa de troco para: R$ ${troco}`;
         }
