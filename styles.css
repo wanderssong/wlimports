@@ -440,7 +440,7 @@ footer img {
         transform: translateY(0);
     }
     10% {
-        opacity: 1; /* Aparece rapidamente */
+        opacity: 4; /* Aparece rapidamente */
     }
     
 }
