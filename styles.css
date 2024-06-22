@@ -26,7 +26,7 @@ header {
 }
 
 #cart-button {
-    background-color: #25D366;
+    background-color: #035220;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -200,7 +200,7 @@ h6 {                        /*FONTE PARA MODAL DETALHES */
 }
 
 .product button {
-    background-color: #25D366;
+    background-color: #036527;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -605,7 +605,7 @@ footer img {
 
     /* Ajustes no botão de carrinho */
     #cart-button {
-        width: calc(100% - 40px); /* Largura do botão de carrinho */
+        width: calc(80% - 40px); /* Largura do botão de carrinho */
         margin: 10px 20px; /* Espaçamento ao redor do botão */
         align-self: center; /* Alinhamento centralizado */
     }
