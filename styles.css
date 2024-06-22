@@ -346,25 +346,33 @@ footer img {
     
     position:absolute;
     bottom: 50px; /* Distância do ícone até a borda inferior do footer */
-    left: 10px; /* Distância do ícone até a borda esquerda do footer */
-    width: 100px;
+    left: 300px; /* Distância do ícone até a borda esquerda do footer */
+    
     
     
 }
+.instagram-icon img,
+.wpp-icon img {
+    width: 45px; /* Reduz o tamanho dos ícones */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Bordas arredondadas */
+    animation:glow 3s infinite;
+    left: 10px;
+}
 
 .instagram-icon {
-    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
+    width: 10px; /* Ajuste o tamanho do ícone conforme desejado */
     height: auto; /* Mantém a proporção da imagem */
     animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
     
     border-radius: 50%;
 } 
 .wpp-icon{
-    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
+    width: 10px; /* Ajuste o tamanho do ícone conforme desejado */
     height: auto; /* Mantém a proporção da imagem */
     animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
     border-radius: 50%;
-    left: 100px;
+    left: 200px;
     
 
 }
