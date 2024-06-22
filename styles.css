@@ -349,6 +349,7 @@ footer img {
     left: 10px; /* Distância do ícone até a borda esquerda do footer */
     width: 100px;
     
+    
 }
 
 .instagram-icon {
@@ -361,9 +362,9 @@ footer img {
 .wpp-icon{
     width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
     height: auto; /* Mantém a proporção da imagem */
-   
     animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
     border-radius: 50%;
+    left: 100px;
     
 
 }
@@ -508,15 +509,7 @@ footer img {
         max-width: 80%; /* Largura máxima do modal */
         margin: 20% auto; /* Centralização do modal na tela */
     }
-    .wpp-icon{
-        width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
-        height: auto; /* Mantém a proporção da imagem */
-        margin-top: auto;
-        animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
-        border-radius: 50%;
-        
     
-    }
 
     /* Configurações da lista de produtos */
     .product-list {
