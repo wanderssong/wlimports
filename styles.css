@@ -241,7 +241,7 @@ button {                           /* button FINALIZAR PEDIDO */
 }
 
 button:hover {
-    background-color: #f16b05;
+    background-color: #0df105;
     transform: scale(1.05);
 }
 
@@ -250,7 +250,7 @@ button:active {
 }
 
 #pagamento-forma {
-    background-color: #0d0d0d;
+    background-color: #de0707;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -263,7 +263,7 @@ button:active {
 }
 
 #pagamento-forma:hover {
-    background-color: #fc8506;
+    background-color: #07b644;
     transform: scale(1.05);
 }
 
