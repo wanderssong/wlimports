@@ -597,7 +597,7 @@ footer img {
     .wpp-icon{
         width: 45px; /* Ajuste o tamanho do ícone conforme desejado */
         height: auto; /* Mantém a proporção da imagem */
-        left: 100px;
+        left: 180px;
         animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
         border-radius: 50%;
     }
