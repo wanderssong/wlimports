@@ -354,7 +354,7 @@ footer img {
     width: 40px;
     height: auto;
     animation: glow 3s infinite;
-    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+    left: 13px; /* Ajuste a posição horizontal conforme necessário */
     top: -32px; /* Subir os ícones em relação à posição original */
     border-radius: 50%;
     margin-right: 55px;
