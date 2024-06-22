@@ -343,7 +343,9 @@ footer img {
 }
 
 .social-icons {
-    
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
     position:absolute;
     bottom: 50px; /* Distância do ícone até a borda inferior do footer */
     left: 300px; /* Distância do ícone até a borda esquerda do footer */
@@ -357,7 +359,7 @@ footer img {
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 50%; /* Bordas arredondadas */
     animation:glow 3s infinite;
-    left: 10px;
+    
 }
 
 .instagram-icon {
@@ -517,7 +519,11 @@ footer img {
         max-width: 80%; /* Largura máxima do modal */
         margin: 20% auto; /* Centralização do modal na tela */
     }
-    
+    .social-icons{
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
 
     /* Configurações da lista de produtos */
     .product-list {
