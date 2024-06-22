@@ -20,7 +20,695 @@ header {
 }
 
 .logo {
+    max-height: 180px;body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundo.png?raw=true);
+    box-sizing: border-box;
+}
+
+header {
+    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundofooter.jpg?raw=true);
+    color: #fff;
+    padding: 0px 0; /* Ajuste de padding para separação superior e inferior */
+    display: flex;
+    flex-direction: row; /* Mudança para linha para alinhar itens horizontalmente */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    animation: glowing 1.5s infinite;
+    box-shadow: 0 0 10px #f16b05;
+}
+
+.logo {
     max-height: 180px;
+    width: 200px;
+    height: auto;
+}
+
+#cart-button {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-left: 100px; /* Mover o botão para o lado direito */
+}
+
+#cart-button:hover {
+    background-color: #f16b05;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-top: 10px; /* Adiciona margem superior para separação do h1 */
+    animation: glowing 1.5s infinite;
+}
+
+
+@keyframes glow {
+    0% {
+        border-color: #f16b05;
+        box-shadow: 0 0 5px #f16b05;
+    }
+    50% {
+        border-color: #ff9500;
+        box-shadow: 0 0 20px #ff9500;
+    }
+    100% {
+        border-color: #f16b05;
+        box-shadow: 0 0 5px #f16b05;
+    }
+}
+
+@keyframes glowing {                 /* Adiciona borda animada no produtos */
+    0% { box-shadow: 0 0 5px #f16b05; }
+    50% { box-shadow: 0 0 20px #f16b05; }
+    100% { box-shadow: 0 0 5px #f16b05; }
+}
+@keyframes slideAndFade {          /* Adiciona animacao na menssagem de adicionado ao carrinho */
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #f16b05;
+    box-shadow: 0 0 10px rgba(241, 107, 5, 0.8);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #faf7f7;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 20px; /* Adiciona margem superior para separação do campo de busca */
+}
+/* CSS para o elemento h2 */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  overflow: hidden; /* Para esconder a borda inicialmente */
+}
+
+/* Pseudo-elemento para a borda */
+h2::after {
+  content: ''; /* Criando um pseudo-elemento para a borda */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Altura da borda */
+  background-color: #ff9500; /* Cor da borda */
+  animation: pulseBorder 2s linear infinite; /* Animando a borda continuamente */
+}
+
+/* Keyframes para a animação de pulsação */
+@keyframes pulseBorder {
+  0% {
+    transform: scaleX(0); /* Começa sem largura */
+  }
+  50% {
+    transform: scaleX(1); /* Cresce até a largura total */
+  }
+  100% {
+    transform: scaleX(0); /* Volta para sem largura */
+  }
+}
+
+
+h6 {                        /*FONTE PARA MODAL DETALHES */
+    color: #ddd;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px; /* Diminuir o padding */
+    text-align: center;
+    width: 200px; /* Diminuir a largura */
+    box-shadow: 0 2px 5px rgba(253, 252, 252, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: glowing 1.5s infinite;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 16px; /* Ajustar tamanho da fonte */
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    color: #333;
+}
+
+.product button {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px; /* Ajustar o padding */
+    cursor: pointer;
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    margin-bottom: 5px;
+}
+
+.product button:hover {
+    background-color: #ef6401;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento superior e inferior */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #f16b05;
+}
+
+button {
+    background-color: #05f150;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #f16b05;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#pagamento-forma {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: calc(100% - 20px);
+    margin: 10px 0; /* Espaçamento superior e inferior */
+}
+
+#pagamento-forma:hover {
+    background-color: #fc8506;
+    transform: scale(1.05);
+}
+
+#pagamento-forma:active {
+    transform: scale(0.95);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-out forwards;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content {                      /* modal carrinho */
+    background-color: #121111;
+    color: #faf7f7;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    animation: slideIn 0.5s ease-out forwards;
+    box-shadow: 0 0 10px #f16b05;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(254, 90, 2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundofooter.jpg?raw=true);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Garante que elementos posicionados absolutamente não ultrapassem os limites do footer */
+}
+
+footer img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 160px;
+    height: auto;
+}
+
+.social-icons {
+    
+    position:absolute;
+    bottom: 50px; /* Distância do ícone até a borda inferior do footer */
+    left: 10px; /* Distância do ícone até a borda esquerda do footer */
+    width: 100px;
+    
+}
+
+.instagram-icon {
+    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
+    
+    border-radius: 50%;
+} 
+.wpp-icon{
+    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
+    height: auto; /* Mantém a proporção da imagem */
+   
+    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
+    border-radius: 50%;
+    
+
+}
+
+@keyframes pulse {     /* Aplica a animação no icon instagram */
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li button {
+    background-color: red;
+    color: rgb(243, 241, 241);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cart-items li button:hover {
+    background-color: darkred;
+}
+
+#product-modal .modal-content {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+#product-modal img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    max-height: 6%;
+    background-color: #07f54eee;
+    color: #fff;
+    padding: 8px 5px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 17px;
+    animation: fadeInUp 0.5s ease-out forwards;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.toast.show {
+    display: flex;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(0);
+    }
+    10% {
+        opacity: 4; /* Aparece rapidamente */
+    }
+    
+}
+#endereco-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#endereco-form h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#endereco-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#endereco-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#endereco-form button[type="submit"] {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#endereco-form button[type="submit"]:hover {
+    background-color: #128C7E;
+}
+
+/* Media queries para responsividade  MOBILE */
+@media (max-width: 768px) {
+    
+    header h1{
+        text-align: center;
+    }
+    /* Ajustes no modal de produtos */
+    .modal-content {
+        
+        width: 80%; /* Largura do modal de produtos */
+        max-width: 80%; /* Largura máxima do modal */
+        margin: 20% auto; /* Centralização do modal na tela */
+    }
+
+    /* Configurações da lista de produtos */
+    .product-list {
+        display: flex; /* Layout de exibição flexível */
+        flex-wrap: nowrap; /* Não permite quebrar linha */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        padding: 10px; /* Espaçamento interno */
+        gap: 10px; /* Espaçamento entre os produtos */
+        justify-content: flex-start; /* Alinhamento dos produtos à esquerda */
+        width: 100%; /* Largura total da lista de produtos */
+        scroll-snap-type: x mandatory; /* Rolagem obrigatória horizontal */
+        -webkit-overflow-scrolling: touch; /* Rolagem suave para dispositivos iOS */
+    }
+
+    /* Estilo de cada produto */
+    .product {
+        flex: 0 0 auto; /* Produtos não encolhem */
+        width: 150px; /* Largura dos produtos */
+        margin: 0 5px; /* Espaçamento horizontal entre os produtos */
+        display: flex; /* Layout de exibição flexível */
+        flex-direction: column; /* Itens dispostos em coluna */
+        align-items: center; /* Alinhamento no centro */
+        justify-content: space-between; /* Distribuição do espaço entre os itens */
+        overflow: hidden; /* Esconde conteúdo que exceder a caixa */
+        background-color: #fff; /* Fundo branco */
+        border-radius: 10px; /* Cantos arredondados */
+        padding: 10px; /* Espaçamento interno */
+        scroll-snap-align: start; /* Alinhamento ao iniciar a rolagem */
+    }
+
+    /* Estilo da imagem dentro do produto */
+    .product img {
+        width: 100%; /* Imagem ocupa toda a largura do contêiner */
+        height: auto; /* Altura automática, mantendo proporção */
+        border-radius: 10px 10px 0 0; /* Cantos arredondados */
+        max-height: 100px; /* Altura máxima da imagem */
+    }
+
+    /* Estilo do título (h2) dentro do produto */
+    .product h2 {
+        font-size: 11px; /* Tamanho da fonte do título */
+        margin: 3px 0; /* Espaçamento ao redor do título */
+        max-height: 30px; /* Altura máxima do título */
+        overflow: hidden; /* Esconde texto que exceder a caixa */
+        text-overflow: ellipsis; /* Texto truncado com reticências */
+        white-space: nowrap; /* Não permite quebras de linha */
+        text-align: center; /* Alinhamento central do texto */
+    }
+
+    /* Estilo do texto (p) dentro do produto */
+    .product p {
+        font-size: 14px; /* Tamanho da fonte do texto */
+        color: #333; /* Cor do texto */
+        max-height: 30px; /* Altura máxima do texto */
+        overflow: hidden; /* Esconde texto que exceder a caixa */
+        text-overflow: ellipsis; /* Texto truncado com reticências */
+        text-align: center; /* Alinhamento central do texto */
+    }
+
+    /* Estilo do botão dentro do produto */
+    .product button {
+        font-size: 12px; /* Tamanho da fonte do botão */
+        padding: 8px; /* Espaçamento interno do botão */
+        margin-top: 1px; /* Espaçamento superior do botão */
+        margin-right: 18px;   /* Espaçamento um botão para o outro */
+        width: 90%; /* Largura total do botão */
+        border-radius: 5px; /* Cantos arredondados */
+    }
+
+    /* Estilo da barra de pesquisa */
+    #search-bar {
+        width: calc(100% - 40px); /* Largura da barra de pesquisa */
+        margin: 10px 20px; /* Espaçamento ao redor da barra de pesquisa */
+    }
+
+    /* Ajustes no cabeçalho */
+    header {
+        flex-direction: column; /* Itens dispostos em coluna */
+    }
+
+    /* Ajustes no rodapé */
+    footer img {
+        position: relative; /* Posição relativa */
+        bottom: auto; /* Sem posicionamento inferior fixo */
+        right: auto; /* Sem posicionamento à direita fixo */
+        margin-top: 10px; /* Espaçamento superior */
+    }
+    .social-icons {
+    
+        position:absolute;
+        bottom: 150px; /* Distância do ícone até a borda inferior do footer */
+        left: 10px; /* Distância do ícone até a borda esquerda do footer */
+        width: 100px;
+        
+    }
+    
+
+    /* Ajustes no botão de carrinho */
+    #cart-button {
+        width: calc(100% - 40px); /* Largura do botão de carrinho */
+        margin: 10px 20px; /* Espaçamento ao redor do botão */
+        align-self: center; /* Alinhamento centralizado */
+    }
+}
+/* Estilização adicional para os botões do carrinho */
+#cart-items li button {
+    background-color: #f10505;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#cart-items li button:hover {
+    background-color: #f6b903;
+    transform: scale(1.05);
+}
+
+#cart-items li button:active {
+    transform: scale(0.95);
+}
+/* Estilo base para o ícone da sacola */
+#cart-icon {
+    color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    cursor: pointer;
+    background-color: #1b1816df;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(252, 127, 2, 0.1);
+    transition: transform 0.2s ease-in-out;
+    animation: pulse-border 2s infinite;
+    z-index: 9999;
+}
+
+/* Animação de pulso nas bordas */
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(251, 105, 1, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* Classe para animação ao adicionar produto ao carrinho */
+@keyframes add-to-cart-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplicar a classe de animação */
+.add-to-cart {
+    animation: add-to-cart-animation 0.5s ease;
+}
+
+/* Remova a animação quando o mouse estiver sobre o ícone */
+#cart-icon:hover {
+    animation: none; /* Remove a animação ao passar o mouse */
+}
+
+#cart-icon img {
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+}
     width: 200px;
     height: auto;
 }
