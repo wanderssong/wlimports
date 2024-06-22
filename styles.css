@@ -328,7 +328,7 @@ button:active {
 footer {
     background: url(https://github.com/wanderssong/wlimports/blob/main/Img/fundofooter.jpg?raw=true);
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: relative;
     overflow: hidden; /* Garante que elementos posicionados absolutamente não ultrapassem os limites do footer */
@@ -343,30 +343,37 @@ footer img {
 }
 
 .social-icons {
-    display: inline;
+    position: absolute;
+    left: 80px;
+    bottom: 90px; /* Ajuste a distância vertical conforme necessário */
     
-    position:absolute;
-    bottom: 55px; /* Distância do ícone até a borda inferior do footer */
-    left: 10px; /* Distância do ícone até a borda esquerda do footer */
-    width: 100px;
+
 }
 
 .instagram-icon {
-    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
-    height: auto; /* Mantém a proporção da imagem */
-    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
-    
+    width: 40px;
+    height: auto;
+    animation: glow 3s infinite;
+    left: 0; /* Ajuste a posição horizontal conforme necessário */
+    top: -20px; /* Subir os ícones em relação à posição original */
     border-radius: 50%;
-} 
-.whatsapp-icon {
-    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
-    height: auto; /* Mantém a proporção da imagem */
-    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
-    left: 100px;
-    border-radius: 50%;
-} 
+    margin-right: 55px;
+    display: inline-block;
+}
 
-@keyframes pulse {     /* Aplica a animação no icon instagram */
+.whatsapp-icon {
+    width: 40px;
+    height: auto;
+    animation: glow 3s infinite;
+    left: 0; /* Ajuste a posição horizontal conforme necessário */
+    top: 30px; /* Subir os ícones em relação à posição original */
+    border-radius: 50%;
+    margin-right: 55px;
+    display: inline-block;
+}
+
+
+@keyframes pulse {     /* Aplica a animação no icon  */
     0% {
         transform: scale(1);
     }
