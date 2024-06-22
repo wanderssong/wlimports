@@ -343,6 +343,7 @@ footer img {
 }
 
 .social-icons {
+    display: inline;
     
     position:absolute;
     bottom: 55px; /* Distância do ícone até a borda inferior do footer */
@@ -355,6 +356,13 @@ footer img {
     height: auto; /* Mantém a proporção da imagem */
     animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
     
+    border-radius: 50%;
+} 
+.whatsapp-icon {
+    width: 40px; /* Ajuste o tamanho do ícone conforme desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
+    left: 100px;
     border-radius: 50%;
 } 
 
