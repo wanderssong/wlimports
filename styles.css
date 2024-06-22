@@ -229,8 +229,8 @@ input[type="text"]:focus {
     border-color: #f16b05;
 }
 
-button {
-    background-color: #05f150;
+button {                           /* button FINALIZAR PEDIDO */
+    background-color: #046021;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
