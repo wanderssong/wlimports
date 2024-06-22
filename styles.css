@@ -359,6 +359,7 @@ footer img {
     border-radius: 50%;
     margin-right: 55px;
     display: inline-block;
+    z-index: 9999;
 }
 
 .whatsapp-icon {
@@ -370,6 +371,7 @@ footer img {
     border-radius: 50%;
     margin-right: 55px;
     display: inline-block;
+    z-index: 9999;
 }
 
 
