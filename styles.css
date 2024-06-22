@@ -357,6 +357,14 @@ footer img {
     
     border-radius: 50%;
 } 
+.wpp-icon{
+    width: 50px; /* Ajuste o tamanho do ícone conforme desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    left: 100px;
+    animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
+    border-radius: 50%;
+
+}
 
 @keyframes pulse {     /* Aplica a animação no icon instagram */
     0% {
