@@ -345,7 +345,7 @@ footer img {
 .social-icons {
     
     position:absolute;
-    bottom: 110px; /* Distância do ícone até a borda inferior do footer */
+    bottom: 50px; /* Distância do ícone até a borda inferior do footer */
     left: 10px; /* Distância do ícone até a borda esquerda do footer */
     width: 100px;
 }
@@ -593,6 +593,13 @@ footer img {
         bottom: auto; /* Sem posicionamento inferior fixo */
         right: auto; /* Sem posicionamento à direita fixo */
         margin-top: 10px; /* Espaçamento superior */
+    }
+    .wpp-icon{
+        width: 45px; /* Ajuste o tamanho do ícone conforme desejado */
+        height: auto; /* Mantém a proporção da imagem */
+        left: 100px;
+        animation:glow 3s infinite; /* Aplica a animação pulse de forma infinita */
+        border-radius: 50%;
     }
 
     /* Ajustes no botão de carrinho */
