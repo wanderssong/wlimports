@@ -345,7 +345,7 @@ footer img {
 .social-icons {
     
     position:absolute;
-    bottom: 100px; /* Distância do ícone até a borda inferior do footer */
+    bottom: 110px; /* Distância do ícone até a borda inferior do footer */
     left: 10px; /* Distância do ícone até a borda esquerda do footer */
     width: 100px;
 }
